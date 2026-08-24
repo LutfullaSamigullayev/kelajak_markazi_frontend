@@ -32,6 +32,9 @@ export default function RegionalMapSection() {
           <div className="flex justify-center mb-8 overflow-x-auto pb-2 scrollbar-none">
             <TabsList className="flex flex-wrap justify-center gap-1.5 h-auto p-2 max-w-full">
               {regionsData.map((reg) => (
+                <TabsTrigger key={reg.id} value={reg.id} className="text-xs sm:text-sm">
+                  {reg.name}
+                </TabsTrigger>
               ))}
             </TabsList>
           </div>
