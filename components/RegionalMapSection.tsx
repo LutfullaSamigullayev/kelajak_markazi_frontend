@@ -38,6 +38,9 @@ export default function RegionalMapSection() {
               ))}
             </TabsList>
           </div>
+
+          {regionsData.map((reg) => (
+          ))}
         </Tabs>
       </div>
     </section>
