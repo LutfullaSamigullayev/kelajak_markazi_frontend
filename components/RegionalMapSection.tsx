@@ -45,6 +45,14 @@ export default function RegionalMapSection() {
                 {/* Left: Detailed Info Card */}
                 <div className="lg:col-span-6">
                   <Card className="border-[#BB94E8]/50 shadow-xl bg-white dark:bg-[#1D0F38]">
+                    <CardHeader className="border-b border-[#E8DFED] dark:border-purple-900 pb-4">
+                      <div className="flex items-center justify-between gap-2">
+                        <Badge variant="purple">{reg.name}</Badge>
+                        <span className="text-xs font-bold text-[#5C2D91] dark:text-[#BB94E8] flex items-center gap-1">
+                          <Building className="w-3.5 h-3.5" /> {reg.clubsCount} ta To'garaklar
+                        </span>
+                      </div>
+                    </CardHeader>
                   </Card>
                 </div>
               </div>
