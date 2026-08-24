@@ -31,6 +31,8 @@ export default function RegionalMapSection() {
         <Tabs defaultValue={regionsData[0].id} onValueChange={setSelectedRegion} className="w-full">
           <div className="flex justify-center mb-8 overflow-x-auto pb-2 scrollbar-none">
             <TabsList className="flex flex-wrap justify-center gap-1.5 h-auto p-2 max-w-full">
+              {regionsData.map((reg) => (
+              ))}
             </TabsList>
           </div>
         </Tabs>
