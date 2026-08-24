@@ -26,6 +26,12 @@ export default function RegionalMapSection() {
             O'zbekistonning barcha viloyatlarida zamonaviy jihozlangan BAMS filiallari faoliyat yuritmoqda.
           </p>
         </div>
+
+        {/* Tabs Interface */}
+        <Tabs defaultValue={regionsData[0].id} onValueChange={setSelectedRegion} className="w-full">
+          <div className="flex justify-center mb-8 overflow-x-auto pb-2 scrollbar-none">
+          </div>
+        </Tabs>
       </div>
     </section>
   );
