@@ -105,6 +105,34 @@ export default function RegionalMapSection() {
                     </CardContent>
                   </Card>
                 </div>
+
+                {/* Right: Map Graphic / Mock Map Card */}
+                <div className="lg:col-span-6">
+                  <div className="relative rounded-3xl overflow-hidden border border-[#E8DFED] dark:border-purple-900 bg-[#120924] shadow-2xl h-80 lg:h-[380px] flex items-center justify-center p-6 text-center">
+                    <img
+                      src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=800"
+                      alt="O'zbekiston xaritasi va markazlar"
+                      className="absolute inset-0 w-full h-full object-cover opacity-40"
+                    />
+                    <div className="relative z-10 flex flex-col items-center gap-4 bg-[#2E0854]/85 backdrop-blur-md p-6 rounded-2xl border border-purple-400/30 max-w-sm">
+                      <Navigation className="w-10 h-10 text-[#BB94E8] animate-bounce" />
+                      <h4 className="text-xl font-extrabold text-white">
+                        {reg.name} Filialiga Xarita Navigatsiyasi
+                      </h4>
+                      <p className="text-xs text-purple-200">
+                        {reg.address} koordinatalari bo'yicha eng yaqin yo'nalishni aniqlash.
+                      </p>
+                      <a
+                        href={`https://yandex.com/maps/?text=${encodeURIComponent(reg.address)}`}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="px-5 py-2.5 rounded-xl bg-[#BB94E8] text-[#2E0854] font-black text-xs hover:bg-white transition-colors"
+                      >
+                        Xaritada Oching (Yandex Maps)
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </TabsContent>
           ))}
