@@ -40,6 +40,15 @@ export default function RegionalMapSection() {
           </div>
 
           {regionsData.map((reg) => (
+            <TabsContent key={reg.id} value={reg.id}>
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                {/* Left: Detailed Info Card */}
+                <div className="lg:col-span-6">
+                  <Card className="border-[#BB94E8]/50 shadow-xl bg-white dark:bg-[#1D0F38]">
+                  </Card>
+                </div>
+              </div>
+            </TabsContent>
           ))}
         </Tabs>
       </div>
