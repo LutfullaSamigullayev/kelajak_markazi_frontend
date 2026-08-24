@@ -80,6 +80,16 @@ export default function RegionalMapSection() {
                             </a>
                           </div>
                         </div>
+
+                        <div className="flex items-start gap-3">
+                          <div className="w-9 h-9 rounded-xl bg-[#F0E6FA] dark:bg-[#2E0854] flex items-center justify-center text-[#5C2D91] shrink-0">
+                            <Mail className="w-4 h-4" />
+                          </div>
+                          <div>
+                            <span className="text-xs font-bold text-muted-foreground uppercase tracking-wider block">Elektron Pochta</span>
+                            <span className="font-semibold text-foreground">{reg.email}</span>
+                          </div>
+                        </div>
                       </div>
                     </CardContent>
                   </Card>
