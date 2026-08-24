@@ -12,6 +12,21 @@ export default function RegionalMapSection() {
 
   return (
     <section className="py-20 bg-[#F9F6FC] dark:bg-[#120924] relative">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Section Header */}
+        <div className="flex flex-col items-center text-center gap-3 mb-12">
+          <Badge variant="purple">
+            <Sparkles className="w-3.5 h-3.5 mr-1" />
+            Respublika Hududlari
+          </Badge>
+          <h2 className="text-3xl sm:text-4xl font-black text-[#3A1B78] dark:text-[#BB94E8]">
+            Kelajak Markazlari Hududlar Kesimida
+          </h2>
+          <p className="text-sm text-[#666666] dark:text-purple-200 max-w-2xl">
+            O'zbekistonning barcha viloyatlarida zamonaviy jihozlangan BAMS filiallari faoliyat yuritmoqda.
+          </p>
+        </div>
+      </div>
     </section>
   );
 }
