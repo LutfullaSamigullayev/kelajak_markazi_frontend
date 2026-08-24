@@ -91,6 +91,17 @@ export default function RegionalMapSection() {
                           </div>
                         </div>
                       </div>
+
+                      <div className="p-4 rounded-2xl bg-gradient-to-r from-[#5C2D91] to-[#3A1B78] text-white flex items-center justify-between shadow-md">
+                        <div className="flex items-center gap-3">
+                          <Users className="w-5 h-5 text-[#BB94E8]" />
+                          <div>
+                            <span className="text-xs text-purple-200 block">Jami Tahsil Olayotganlar</span>
+                            <span className="text-lg font-black">{reg.studentsCount} nafar o'quvchilar</span>
+                          </div>
+                        </div>
+                        <Badge variant="accent">Rahbar: {reg.director}</Badge>
+                      </div>
                     </CardContent>
                   </Card>
                 </div>
