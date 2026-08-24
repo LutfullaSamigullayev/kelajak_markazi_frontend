@@ -52,6 +52,9 @@ export default function RegionalMapSection() {
                           <Building className="w-3.5 h-3.5" /> {reg.clubsCount} ta To'garaklar
                         </span>
                       </div>
+                      <CardTitle className="text-2xl font-black text-[#3A1B78] dark:text-white mt-2">
+                        {reg.centerName}
+                      </CardTitle>
                     </CardHeader>
                   </Card>
                 </div>
