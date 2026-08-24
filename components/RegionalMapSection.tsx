@@ -8,6 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import { MapPin, Phone, Mail, Building, Users, Sparkles, Navigation } from "lucide-react";
 
 export default function RegionalMapSection() {
+  const [selectedRegion, setSelectedRegion] = useState(regionsData[0].id);
 
   return (
     <section className="py-20 bg-[#F9F6FC] dark:bg-[#120924] relative">
