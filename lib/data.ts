@@ -200,3 +200,15 @@ export const featuredClubs: Club[] = [
     isPopular: false,
   },
 ];
+
+export interface NewsItem {
+  id: string;
+  title: string;
+  category: string;
+  date: string;
+  readTime: string;
+  image: string;
+  summary: string;
+  content: string;
+  author: string;
+}
