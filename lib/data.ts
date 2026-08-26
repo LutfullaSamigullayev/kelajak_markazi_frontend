@@ -329,3 +329,16 @@ export const regionsData: RegionCenter[] = [
     director: "Mirzayev Oybek",
   },
 ];
+
+export interface LeadershipMember {
+  id: string;
+  name: string;
+  position: string;
+  receptionDays: string;
+  phone: string;
+  email: string;
+  image: string;
+  biography: string;
+  experience: string[];
+  responsibilities: string[];
+}
