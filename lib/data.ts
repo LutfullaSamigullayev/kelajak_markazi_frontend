@@ -212,3 +212,39 @@ export interface NewsItem {
   content: string;
   author: string;
 }
+
+export const newsData: NewsItem[] = [
+  {
+    id: "news-1",
+    title: "Respublika Kelajak Markazlarida 'Raqamli Avlod' Respublika IT-Olimpiadasi Start Oldi",
+    category: "Tadbirlar",
+    date: "20-Avgust, 2026",
+    readTime: "3 min",
+    image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=600",
+    summary: "O'zbekiston Respublikasi Maktabgacha va maktab ta'limi vazirligi tashabbusi bilan barcha hududiy Kelajak markazlarida yosh dasturchilar o'rtasida IT musobaqalariga start berildi.",
+    content: "Musobaqada 5000 nafardan ortiq o'quvchilar Web dasturlash, Sun'iy idrok va Robototexnika yo'nalishlarida o'z iqtidorlarini namoyon etmoqdalar. G'oliblar respublika bosqichiga yo'llanma oladilar.",
+    author: "Matbuot Xizmati",
+  },
+  {
+    id: "news-2",
+    title: "Samarqand va Buxoro Viloyatlarida Yangi Zamonaviy Kelajak Markazlari Foydalanishga Topshirildi",
+    category: "Yangiliklar",
+    date: "18-Avgust, 2026",
+    readTime: "4 min",
+    image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=600",
+    summary: "Yangi markazlar so'nggi avlod kompyuter texnologiyalari, IT laboratoriyalar hamda robototexnika majmualari bilan to'liq jihozlangan.",
+    content: "Yangi ochilgan bino va inshootlar har kuni 2000 dan ortiq o'quvchi-yoshlarni qabul qilish imkoniyatiga ega. Barcha to'garaklar bepul asosda faoliyat yuritadi.",
+    author: "Matbuot Xizmati",
+  },
+  {
+    id: "news-3",
+    title: "Xalqaro Tillarni O'rganish Bo'yicha Bepul Master-Klasslar Dasturi E'lon Qilindi",
+    category: "Ta'lim",
+    date: "15-Avgust, 2026",
+    readTime: "2 min",
+    image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=600",
+    summary: "Xalqaro sertifikatga ega bo'lgan tajribali ustozlar va ingliz tili egalari (native speakers) ishtirokida maxsus mahorat darslari tashkil etilmoqda.",
+    content: "Darslarda o'quvchilar IELTS, CEFR imtihon topshiriqlarini bajarish usullari va jonli so'zlashuv (Speaking) texnikalari bo'yicha tavsiyalar oladilar.",
+    author: "Ta'lim Bo'limi",
+  },
+];
