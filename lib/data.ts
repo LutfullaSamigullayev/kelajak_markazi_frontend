@@ -77,3 +77,21 @@ export const directionsData = [
     clubCount: 12,
   },
 ];
+
+export interface Club {
+  id: string;
+  name: string;
+  category: string;
+  categorySlug: string;
+  ageRange: string;
+  duration: string;
+  schedule: string;
+  location: string;
+  teacher: string;
+  rating: number;
+  enrolledCount: number;
+  maxCapacity: number;
+  image: string;
+  description: string;
+  isPopular?: boolean;
+}
