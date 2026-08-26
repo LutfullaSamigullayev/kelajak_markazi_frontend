@@ -29,3 +29,51 @@ export const statsData = [
   { id: 3, value: "120+", label: "Zamonaviy to'garaklar", icon: "GraduationCap", change: "15 ta yo'nalishda" },
   { id: 4, value: "850+", label: "Malakali ustozlar", icon: "Award", change: "Xalqaro sertifikatli" },
 ];
+
+export const directionsData = [
+  {
+    id: "it",
+    title: "IT va Raqamli Texnologiyalar",
+    description: "Web dasturlash, Python, Sun'iy idrok va Grafik dizayn bo'yicha amaliy to'garaklar.",
+    icon: "Code2",
+    color: "from-purple-600 to-indigo-600",
+    badge: "Eng ommabop",
+    clubCount: 24,
+  },
+  {
+    id: "languages",
+    title: "Xorijiy Tillarni O'rganish",
+    description: "Ingliz tili (IELTS/CEFR), Nemis tili, Xitoy va Koreys tillari bo'yicha intensiv kurslar.",
+    icon: "Languages",
+    color: "from-violet-600 to-purple-800",
+    badge: "Sertifikatli",
+    clubCount: 18,
+  },
+  {
+    id: "science",
+    title: "Aniq va Tabiiy Fanlar (STEM)",
+    description: "Robototexnika, Mental arifmetika, Fizika va Matematika to'garaklari.",
+    icon: "Cpu",
+    color: "from-indigo-600 to-purple-600",
+    badge: "Amaliy",
+    clubCount: 15,
+  },
+  {
+    id: "art",
+    title: "Tasviriy San'at va Madaniyat",
+    description: "Rasm chizish, Shaxmat, Musiqa va Teatr mahorat darslari.",
+    icon: "Palette",
+    color: "from-fuchsia-600 to-purple-700",
+    badge: "Ijodiy",
+    clubCount: 20,
+  },
+  {
+    id: "sport",
+    title: "Sport va Salomatlik",
+    description: "Shaxmat, Stol tennisi, Gimnastika va jismoniy rivojlanish to'garaklari.",
+    icon: "Trophy",
+    color: "from-purple-700 to-violet-900",
+    badge: "Sog'lom hayot",
+    clubCount: 12,
+  },
+];
