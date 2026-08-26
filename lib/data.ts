@@ -248,3 +248,15 @@ export const newsData: NewsItem[] = [
     author: "Ta'lim Bo'limi",
   },
 ];
+
+export interface RegionCenter {
+  id: string;
+  name: string;
+  centerName: string;
+  address: string;
+  phone: string;
+  email: string;
+  clubsCount: number;
+  studentsCount: number;
+  director: string;
+}
