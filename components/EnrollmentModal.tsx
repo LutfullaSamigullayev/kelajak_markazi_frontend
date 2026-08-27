@@ -21,6 +21,7 @@ interface EnrollmentModalProps {
 }
 
 export default function EnrollmentModal({ club, isOpen, onClose }: EnrollmentModalProps) {
+  const [submitted, setSubmitted] = useState(false);
 
   return (
   );
