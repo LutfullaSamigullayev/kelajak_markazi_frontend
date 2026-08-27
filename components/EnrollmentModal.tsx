@@ -50,6 +50,9 @@ export default function EnrollmentModal({ club, isOpen, onClose }: EnrollmentMod
                 <Badge variant="purple">{club.category}</Badge>
                 <Badge variant="outline">{club.ageRange}</Badge>
               </div>
+              <DialogTitle className="text-xl font-black text-[#3A1B78] dark:text-[#BB94E8]">
+                {club.name}
+              </DialogTitle>
             </DialogHeader>
           </>
         ) : (
