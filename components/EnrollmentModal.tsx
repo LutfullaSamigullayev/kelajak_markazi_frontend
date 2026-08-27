@@ -14,6 +14,12 @@ import { Badge } from "@/components/ui/badge";
 import { Sparkles, CheckCircle2, User, Phone, MapPin, BookOpen } from "lucide-react";
 import { Club } from "@/lib/data";
 
+interface EnrollmentModalProps {
+  club: Club | null;
+  isOpen: boolean;
+  onClose: () => void;
+}
+
 export default function EnrollmentModal({ club, isOpen, onClose }: EnrollmentModalProps) {
 
   return (
