@@ -14,5 +14,9 @@ const iconMap = {
 
 export default function DirectionsSection() {
   return (
+    <section className="py-20 bg-[#F9F6FC] dark:bg-[#120924] relative overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      </div>
+    </section>
   );
 }
