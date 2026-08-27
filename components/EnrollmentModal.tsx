@@ -41,5 +41,7 @@ export default function EnrollmentModal({ club, isOpen, onClose }: EnrollmentMod
   };
 
   return (
+    <Dialog open={isOpen} onOpenChange={onClose}>
+    </Dialog>
   );
 }
