@@ -22,6 +22,14 @@ interface EnrollmentModalProps {
 
 export default function EnrollmentModal({ club, isOpen, onClose }: EnrollmentModalProps) {
   const [submitted, setSubmitted] = useState(false);
+  const [formData, setFormData] = useState({
+    fullName: "",
+    phone: "",
+    age: "",
+    region: "Toshkent shahri",
+  });
+
+  if (!club) return null;
 
   return (
   );
