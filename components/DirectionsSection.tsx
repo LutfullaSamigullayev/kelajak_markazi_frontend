@@ -57,6 +57,9 @@ export default function DirectionsSection() {
                   </CardHeader>
 
                   <CardContent className="flex flex-col justify-between gap-6">
+                    <CardDescription className="text-sm leading-relaxed text-[#666666] dark:text-purple-200">
+                      {item.description}
+                    </CardDescription>
 
                     <div className="flex items-center justify-between pt-4 border-t border-[#E8DFED] dark:border-purple-900 text-xs font-bold text-[#5C2D91] dark:text-[#BB94E8]">
                       <span>{item.clubCount} ta Faol To'garaklar</span>
