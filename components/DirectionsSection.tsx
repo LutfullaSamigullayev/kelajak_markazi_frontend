@@ -55,6 +55,16 @@ export default function DirectionsSection() {
                       {item.title}
                     </CardTitle>
                   </CardHeader>
+
+                  <CardContent className="flex flex-col justify-between gap-6">
+
+                    <div className="flex items-center justify-between pt-4 border-t border-[#E8DFED] dark:border-purple-900 text-xs font-bold text-[#5C2D91] dark:text-[#BB94E8]">
+                      <span>{item.clubCount} ta Faol To'garaklar</span>
+                      <span className="flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                        Batafsil <ArrowRight className="w-3.5 h-3.5" />
+                      </span>
+                    </div>
+                  </CardContent>
                 </Card>
               </Link>
             );
