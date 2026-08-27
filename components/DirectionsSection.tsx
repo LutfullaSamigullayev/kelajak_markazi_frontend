@@ -37,6 +37,10 @@ export default function DirectionsSection() {
 
             return (
               <Link key={item.id} href={`/clubs?cat=${item.id}`}>
+                <Card className="h-full hover:border-[#5C2D91] hover:shadow-2xl hover:shadow-purple-900/15 hover:-translate-y-1.5 transition-all duration-300 group relative overflow-hidden bg-white dark:bg-[#1D0F38]">
+                  {/* Top Color Accent Ribbon */}
+                  <div className={`h-2 w-full bg-gradient-to-r ${item.color}`} />
+                </Card>
               </Link>
             );
           })}
