@@ -29,6 +29,16 @@ export default function DirectionsSection() {
             Har bir o'quvchi o'z iqtidoriga mos keladigan amaliy to'garakni tanlab, malakali ustozlardan bilim olishi mumkin.
           </p>
         </div>
+
+        {/* Directions Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {directionsData.map((item) => {
+            const IconComponent = iconMap[item.icon as keyof typeof iconMap] || Code2;
+
+            return (
+            );
+          })}
+        </div>
       </div>
     </section>
   );
