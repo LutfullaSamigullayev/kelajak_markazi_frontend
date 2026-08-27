@@ -50,6 +50,10 @@ export default function DirectionsSection() {
                         {item.badge}
                       </Badge>
                     </div>
+
+                    <CardTitle className="text-xl font-extrabold text-[#1A1A1A] dark:text-white group-hover:text-[#5C2D91] dark:group-hover:text-[#BB94E8] transition-colors">
+                      {item.title}
+                    </CardTitle>
                   </CardHeader>
                 </Card>
               </Link>
