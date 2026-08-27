@@ -342,3 +342,64 @@ export interface LeadershipMember {
   experience: string[];
   responsibilities: string[];
 }
+
+export const leadershipData: LeadershipMember[] = [
+  {
+    id: "leader-1",
+    name: "Xoldarova Indira Abduvaliyevna",
+    position: "Respublika 'Kelajak Markazi' Direktori",
+    receptionDays: "Chorshanba: 10:00 - 12:00",
+    phone: "+998 71 200-00-10",
+    email: "director@kelajak.uz",
+    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400",
+    biography: "1982-yilda Toshkent shahrida tug'ilgan. Oliy ma'lumotli. O'zbekiston Milliy Universitetini hamda Garvard Universitetining ta'lim menejmenti magistratura bosqichini tamomlagan.",
+    experience: [
+      "2010-2015 yy. - Xalq ta'limi vazirligi Ta'lim sifatini nazorat qilish bo'limi boshlig'i",
+      "2015-2020 yy. - Respublika ta'lim markazi direktor o'rinbosari",
+      "2020-yildan h.v. - Respublika 'Kelajak Markazi' direktori",
+    ],
+    responsibilities: [
+      "Markazning umumiy rahbarligini va strategik rivojlanish dasturlarini muvofiqlashtirish.",
+      "Respublika bo'yicha iqtidorli o'quvchi-yoshlarni qo'llab-quvvatlash va to'garaklar sifatini nazorat qilish.",
+      "Xalqaro ta'lim tashkilotlari bilan hamkorlik va yangi metodikalarni joriy etish.",
+    ],
+  },
+  {
+    id: "leader-2",
+    name: "Karimov Otabek Rustamovich",
+    position: "Direktor O'rinbosari (Dasturlash va IT yo'nalishi)",
+    receptionDays: "Payshanba: 14:00 - 16:00",
+    phone: "+998 71 200-00-12",
+    email: "it.director@kelajak.uz",
+    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=400",
+    biography: "1988-yilda Samarqand viloyatida tug'ilgan. Toshkent Axborot Texnologiyalari Universiteti hamda Seul Milliy Universiteti bitiruvchisi.",
+    experience: [
+      "2014-2018 yy. - IT Park loyihalar menejeri",
+      "2018-2022 yy. - Xalqaro IT akademiya direktori",
+      "2022-yildan h.v. - Kelajak Markazi IT va Raqamlashtirish bo'yicha direktor o'rinbosari",
+    ],
+    responsibilities: [
+      "Barcha hududiy markazlarda IT, Dasturlash va Robototexnika to'garaklari moddiy-texnik bazasini ta'minlash.",
+      "Raqamli avlod respublika olimpiadalarini tashkil etish.",
+    ],
+  },
+  {
+    id: "leader-3",
+    name: "Sultonova Malika Anvarovna",
+    position: "Direktor O'rinbosari (Ma'naviyat va Yoshlar masalalari)",
+    receptionDays: "Juma: 10:00 - 12:00",
+    phone: "+998 71 200-00-15",
+    email: "youth@kelajak.uz",
+    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=400",
+    biography: "1985-yilda Farg'ona viloyatida tug'ilgan. O'zbekiston Davlat Jahon Tillari Universiteti va Pedagogika Universiteti bitiruvchisi.",
+    experience: [
+      "2012-2019 yy. - Yoshlar ittifoqi tuman Kengashi raisi",
+      "2019-2023 yy. - Maktab maslahatchilari respublika kengashi rahbari",
+      "2023-yildan h.v. - Kelajak Markazi Ma'naviy-ma'rifiy ishlar bo'yicha o'rinbosar",
+    ],
+    responsibilities: [
+      "O'quvchilar kengashi va Maktab maslahatchilari faoliyatini muvofiqlashtirish.",
+      "Ijtimoiy himoyaga muhtoj va iqtidorli o'quvchilarni qo'llab-quvvatlash dasturlari.",
+    ],
+  },
+];
