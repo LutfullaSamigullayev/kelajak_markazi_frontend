@@ -42,6 +42,13 @@ export default function EnrollmentModal({ club, isOpen, onClose }: EnrollmentMod
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
+      <DialogContent className="sm:max-w-md">
+        {!submitted ? (
+          <>
+          </>
+        ) : (
+        )}
+      </DialogContent>
     </Dialog>
   );
 }
