@@ -31,6 +31,15 @@ export default function EnrollmentModal({ club, isOpen, onClose }: EnrollmentMod
 
   if (!club) return null;
 
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setSubmitted(true);
+    setTimeout(() => {
+      setSubmitted(false);
+      onClose();
+    }, 2500);
+  };
+
   return (
   );
 }
