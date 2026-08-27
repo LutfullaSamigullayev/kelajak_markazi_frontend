@@ -45,6 +45,12 @@ export default function EnrollmentModal({ club, isOpen, onClose }: EnrollmentMod
       <DialogContent className="sm:max-w-md">
         {!submitted ? (
           <>
+            <DialogHeader>
+              <div className="flex items-center gap-2 mb-1">
+                <Badge variant="purple">{club.category}</Badge>
+                <Badge variant="outline">{club.ageRange}</Badge>
+              </div>
+            </DialogHeader>
           </>
         ) : (
         )}
