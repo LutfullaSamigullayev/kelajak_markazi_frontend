@@ -36,6 +36,8 @@ export default function DirectionsSection() {
             const IconComponent = iconMap[item.icon as keyof typeof iconMap] || Code2;
 
             return (
+              <Link key={item.id} href={`/clubs?cat=${item.id}`}>
+              </Link>
             );
           })}
         </div>
