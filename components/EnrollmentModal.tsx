@@ -14,7 +14,7 @@ import { Badge } from "@/components/ui/badge";
 import { Sparkles, CheckCircle2, User, Phone, MapPin, BookOpen } from "lucide-react";
 import { Club } from "@/lib/data";
 
-export default function EnrollmentModal() {
+export default function EnrollmentModal({ club, isOpen, onClose }: EnrollmentModalProps) {
 
   return (
   );
