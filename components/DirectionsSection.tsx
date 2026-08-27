@@ -40,6 +40,17 @@ export default function DirectionsSection() {
                 <Card className="h-full hover:border-[#5C2D91] hover:shadow-2xl hover:shadow-purple-900/15 hover:-translate-y-1.5 transition-all duration-300 group relative overflow-hidden bg-white dark:bg-[#1D0F38]">
                   {/* Top Color Accent Ribbon */}
                   <div className={`h-2 w-full bg-gradient-to-r ${item.color}`} />
+
+                  <CardHeader className="pb-3">
+                    <div className="flex items-center justify-between gap-2 mb-2">
+                      <div className="w-12 h-12 rounded-xl bg-[#F0E6FA] dark:bg-[#2E0854] flex items-center justify-center text-[#5C2D91] dark:text-[#BB94E8] group-hover:scale-110 transition-transform">
+                        <IconComponent className="w-6 h-6" />
+                      </div>
+                      <Badge variant="secondary" className="font-bold">
+                        {item.badge}
+                      </Badge>
+                    </div>
+                  </CardHeader>
                 </Card>
               </Link>
             );
