@@ -80,6 +80,26 @@ export default function FeaturedClubs() {
                     {club.description}
                   </p>
                 </CardHeader>
+
+                <CardContent className="py-3 flex flex-col gap-2 text-xs text-[#666666] dark:text-purple-200">
+                  <div className="flex items-center gap-2">
+                    <Clock className="w-4 h-4 text-[#5C2D91] shrink-0" />
+                    <span>{club.schedule}</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <MapPin className="w-4 h-4 text-[#5C2D91] shrink-0" />
+                    <span className="truncate">{club.location}</span>
+                  </div>
+                  <div className="flex items-center justify-between pt-2 border-t border-[#E8DFED] dark:border-purple-900 mt-1">
+                    <span className="flex items-center gap-1.5 font-bold text-[#1A1A1A] dark:text-gray-200">
+                      <Users className="w-3.5 h-3.5 text-[#5C2D91]" />
+                      {club.enrolledCount} / {club.maxCapacity} o'quvchi
+                    </span>
+                    <Badge variant="outline" className="text-[10px]">
+                      {club.ageRange}
+                    </Badge>
+                  </div>
+                </CardContent>
               </div>
             </Card>
           ))}
