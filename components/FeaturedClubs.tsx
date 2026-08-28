@@ -48,6 +48,13 @@ export default function FeaturedClubs() {
         {/* Clubs Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {featuredClubs.map((club) => (
+            <Card
+              key={club.id}
+              className="flex flex-col justify-between overflow-hidden hover:border-[#5C2D91] hover:shadow-xl hover:shadow-purple-900/10 transition-all duration-300 group bg-white dark:bg-[#120924]"
+            >
+              <div>
+              </div>
+            </Card>
           ))}
         </div>
       </div>
