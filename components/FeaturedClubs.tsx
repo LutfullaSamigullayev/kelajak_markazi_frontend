@@ -44,6 +44,11 @@ export default function FeaturedClubs() {
             <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
+
+        {/* Clubs Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {featuredClubs.map((club) => (
+          ))}
         </div>
       </div>
     </section>
