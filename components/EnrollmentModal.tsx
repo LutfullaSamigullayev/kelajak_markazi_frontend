@@ -120,6 +120,11 @@ export default function EnrollmentModal({ club, isOpen, onClose }: EnrollmentMod
                   <option value="Xorazm viloyati">Xorazm viloyati</option>
                 </select>
               </div>
+
+              <div className="p-3 rounded-xl bg-[#F0E6FA] dark:bg-[#2E0854] text-xs text-[#5C2D91] dark:text-[#BB94E8] flex items-center gap-2">
+                <Sparkles className="w-4 h-4 shrink-0" />
+                <span>To'garakda ta'lim olish to'liq **bepul** va sertifikatli!</span>
+              </div>
             </form>
           </>
         ) : (
