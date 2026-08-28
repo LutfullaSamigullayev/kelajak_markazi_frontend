@@ -10,6 +10,7 @@ import EnrollmentModal from "@/components/EnrollmentModal";
 import { Star, Users, MapPin, Clock, ArrowRight, Sparkles } from "lucide-react";
 
 export default function FeaturedClubs() {
+  const [selectedClub, setSelectedClub] = useState<Club | null>(null);
 
   return (
   );
