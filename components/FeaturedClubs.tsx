@@ -11,6 +11,7 @@ import { Star, Users, MapPin, Clock, ArrowRight, Sparkles } from "lucide-react";
 
 export default function FeaturedClubs() {
   const [selectedClub, setSelectedClub] = useState<Club | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
   );
