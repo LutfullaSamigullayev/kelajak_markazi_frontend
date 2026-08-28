@@ -73,6 +73,9 @@ export default function FeaturedClubs() {
                 </div>
 
                 <CardHeader className="pb-2">
+                  <CardTitle className="text-lg font-black text-[#1A1A1A] dark:text-white line-clamp-1 group-hover:text-[#5C2D91] dark:group-hover:text-[#BB94E8] transition-colors">
+                    {club.name}
+                  </CardTitle>
                   <p className="text-xs text-[#666666] dark:text-purple-300 line-clamp-2 mt-1">
                     {club.description}
                   </p>
