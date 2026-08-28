@@ -71,6 +71,21 @@ export default function EnrollmentModal({ club, isOpen, onClose }: EnrollmentMod
                   onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
                 />
               </div>
+
+              <div className="grid grid-cols-2 gap-3">
+                <div className="flex flex-col gap-1.5">
+                  <label className="text-xs font-bold text-[#1A1A1A] dark:text-gray-200 flex items-center gap-1.5">
+                    <Phone className="w-3.5 h-3.5 text-[#5C2D91]" />
+                    <span>Telefon Raqam</span>
+                  </label>
+                  <Input
+                    required
+                    type="tel"
+                    placeholder="+998 90 123-45-67"
+                    value={formData.phone}
+                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                  />
+                </div>
               </div>
             </form>
           </>
