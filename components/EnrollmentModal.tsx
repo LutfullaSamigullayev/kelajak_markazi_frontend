@@ -59,6 +59,18 @@ export default function EnrollmentModal({ club, isOpen, onClose }: EnrollmentMod
             </DialogHeader>
 
             <form onSubmit={handleSubmit} className="flex flex-col gap-4 mt-2">
+              <div className="flex flex-col gap-1.5">
+                <label className="text-xs font-bold text-[#1A1A1A] dark:text-gray-200 flex items-center gap-1.5">
+                  <User className="w-3.5 h-3.5 text-[#5C2D91]" />
+                  <span>O'quvchi / Validain F.I.SH.</span>
+                </label>
+                <Input
+                  required
+                  placeholder="Masalan: Abdullayev Sardor"
+                  value={formData.fullName}
+                  onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
+                />
+              </div>
               </div>
             </form>
           </>
