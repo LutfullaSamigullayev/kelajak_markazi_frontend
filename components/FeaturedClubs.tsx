@@ -71,6 +71,12 @@ export default function FeaturedClubs() {
                     <span>{club.rating}</span>
                   </div>
                 </div>
+
+                <CardHeader className="pb-2">
+                  <p className="text-xs text-[#666666] dark:text-purple-300 line-clamp-2 mt-1">
+                    {club.description}
+                  </p>
+                </CardHeader>
               </div>
             </Card>
           ))}
