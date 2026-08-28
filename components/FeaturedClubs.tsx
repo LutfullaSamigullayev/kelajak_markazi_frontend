@@ -13,6 +13,11 @@ export default function FeaturedClubs() {
   const [selectedClub, setSelectedClub] = useState<Club | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
+  const handleEnrollClick = (club: Club) => {
+    setSelectedClub(club);
+    setIsModalOpen(true);
+  };
+
   return (
   );
 }
