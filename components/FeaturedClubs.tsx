@@ -53,6 +53,24 @@ export default function FeaturedClubs() {
               className="flex flex-col justify-between overflow-hidden hover:border-[#5C2D91] hover:shadow-xl hover:shadow-purple-900/10 transition-all duration-300 group bg-white dark:bg-[#120924]"
             >
               <div>
+                {/* Image & Badge overlay */}
+                <div className="relative h-48 w-full overflow-hidden bg-purple-100">
+                  <img
+                    src={club.image}
+                    alt={club.name}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute top-3 left-3 flex items-center gap-2">
+                    <Badge variant="purple" className="shadow-md">
+                      {club.category}
+                    </Badge>
+                    {club.isPopular && <Badge variant="accent">HOT</Badge>}
+                  </div>
+                  <div className="absolute bottom-3 right-3 bg-black/70 backdrop-blur-md text-white text-xs font-bold px-2.5 py-1 rounded-lg flex items-center gap-1">
+                    <Star className="w-3.5 h-3.5 text-amber-400 fill-amber-400" />
+                    <span>{club.rating}</span>
+                  </div>
+                </div>
               </div>
             </Card>
           ))}
