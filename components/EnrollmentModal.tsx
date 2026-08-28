@@ -100,6 +100,26 @@ export default function EnrollmentModal({ club, isOpen, onClose }: EnrollmentMod
                   />
                 </div>
               </div>
+
+              <div className="flex flex-col gap-1.5">
+                <label className="text-xs font-bold text-[#1A1A1A] dark:text-gray-200 flex items-center gap-1.5">
+                  <MapPin className="w-3.5 h-3.5 text-[#5C2D91]" />
+                  <span>Joylashuv / Hududiy Markaz</span>
+                </label>
+                <select
+                  className="flex h-11 w-full rounded-xl border border-input bg-background px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5C2D91]"
+                  value={formData.region}
+                  onChange={(e) => setFormData({ ...formData, region: e.target.value })}
+                >
+                  <option value="Toshkent shahri">Toshkent shahri markazi</option>
+                  <option value="Samarqand viloyati">Samarqand viloyati</option>
+                  <option value="Buxoro viloyati">Buxoro viloyati</option>
+                  <option value="Farg'ona viloyati">Farg'ona viloyati</option>
+                  <option value="Andijon viloyati">Andijon viloyati</option>
+                  <option value="Namangan viloyati">Namangan viloyati</option>
+                  <option value="Xorazm viloyati">Xorazm viloyati</option>
+                </select>
+              </div>
             </form>
           </>
         ) : (
