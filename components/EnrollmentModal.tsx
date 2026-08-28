@@ -57,6 +57,10 @@ export default function EnrollmentModal({ club, isOpen, onClose }: EnrollmentMod
                 To'garakka ariza topshirish uchun quyidagi ma'lumotlarni to'ldiring. Ariza 24 soat ichida ko'rib chiqiladi.
               </DialogDescription>
             </DialogHeader>
+
+            <form onSubmit={handleSubmit} className="flex flex-col gap-4 mt-2">
+              </div>
+            </form>
           </>
         ) : (
         )}
