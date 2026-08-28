@@ -135,6 +135,17 @@ export default function EnrollmentModal({ club, isOpen, onClose }: EnrollmentMod
             </form>
           </>
         ) : (
+          <div className="py-8 flex flex-col items-center justify-center text-center gap-3 animate-in zoom-in duration-300">
+            <div className="w-16 h-16 rounded-full bg-emerald-100 dark:bg-emerald-950 flex items-center justify-center text-emerald-600 dark:text-emerald-400">
+              <CheckCircle2 className="w-10 h-10" />
+            </div>
+            <h3 className="text-2xl font-extrabold text-[#3A1B78] dark:text-white">
+              Arizangiz Qabul Qilindi!
+            </h3>
+            <p className="text-sm text-muted-foreground max-w-xs">
+              Operatorlarimiz tez orada <b>{formData.phone}</b> raqami orqali siz bilan bog'lanishadi.
+            </p>
+          </div>
         )}
       </DialogContent>
     </Dialog>
