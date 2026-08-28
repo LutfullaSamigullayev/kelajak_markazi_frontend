@@ -53,6 +53,9 @@ export default function EnrollmentModal({ club, isOpen, onClose }: EnrollmentMod
               <DialogTitle className="text-xl font-black text-[#3A1B78] dark:text-[#BB94E8]">
                 {club.name}
               </DialogTitle>
+              <DialogDescription>
+                To'garakka ariza topshirish uchun quyidagi ma'lumotlarni to'ldiring. Ariza 24 soat ichida ko'rib chiqiladi.
+              </DialogDescription>
             </DialogHeader>
           </>
         ) : (
