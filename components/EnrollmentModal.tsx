@@ -86,6 +86,19 @@ export default function EnrollmentModal({ club, isOpen, onClose }: EnrollmentMod
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                   />
                 </div>
+                <div className="flex flex-col gap-1.5">
+                  <label className="text-xs font-bold text-[#1A1A1A] dark:text-gray-200 flex items-center gap-1.5">
+                    <BookOpen className="w-3.5 h-3.5 text-[#5C2D91]" />
+                    <span>O'quvchi Yoshi</span>
+                  </label>
+                  <Input
+                    required
+                    type="number"
+                    placeholder="14"
+                    value={formData.age}
+                    onChange={(e) => setFormData({ ...formData, age: e.target.value })}
+                  />
+                </div>
               </div>
             </form>
           </>
