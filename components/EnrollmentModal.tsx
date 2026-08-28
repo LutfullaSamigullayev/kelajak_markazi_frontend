@@ -125,6 +125,13 @@ export default function EnrollmentModal({ club, isOpen, onClose }: EnrollmentMod
                 <Sparkles className="w-4 h-4 shrink-0" />
                 <span>To'garakda ta'lim olish to'liq **bepul** va sertifikatli!</span>
               </div>
+
+              <Button
+                type="submit"
+                className="w-full h-12 text-base font-bold bg-gradient-to-r from-[#5C2D91] to-[#3A1B78] hover:from-[#3A1B78] hover:to-[#2E0854] text-white shadow-lg shadow-purple-900/20 rounded-xl"
+              >
+                Arizani Yuborish
+              </Button>
             </form>
           </>
         ) : (
