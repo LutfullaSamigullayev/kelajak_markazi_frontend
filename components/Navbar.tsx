@@ -19,6 +19,7 @@ import {
 } from "lucide-react";
 
 export default function Navbar() {
+  const pathname = usePathname();
 
   return (
     <header className="sticky top-0 z-50 w-full transition-all duration-300">
