@@ -38,6 +38,15 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const toggleContrast = () => {
+    setHighContrast(!highContrast);
+    if (!highContrast) {
+      document.documentElement.classList.add("contrast-high");
+    } else {
+      document.documentElement.classList.remove("contrast-high");
+    }
+  };
+
   return (
     <header className="sticky top-0 z-50 w-full transition-all duration-300">
     </header>
