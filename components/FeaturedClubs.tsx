@@ -101,6 +101,15 @@ export default function FeaturedClubs() {
                   </div>
                 </CardContent>
               </div>
+
+              <CardFooter className="pt-2 pb-5">
+                <Button
+                  onClick={() => handleEnrollClick(club)}
+                  className="w-full bg-gradient-to-r from-[#5C2D91] to-[#3A1B78] hover:from-[#3A1B78] hover:to-[#2E0854] text-white font-bold rounded-xl shadow-md shadow-purple-900/20"
+                >
+                  Azo Bo'lish (Ariza Topshirish)
+                </Button>
+              </CardFooter>
             </Card>
           ))}
         </div>
