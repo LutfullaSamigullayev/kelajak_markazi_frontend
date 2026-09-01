@@ -26,6 +26,18 @@ export default function Navbar() {
   const [highContrast, setHighContrast] = useState(false);
   const [lang, setLang] = useState<"UZ" | "RU">("UZ");
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 20) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <header className="sticky top-0 z-50 w-full transition-all duration-300">
     </header>
