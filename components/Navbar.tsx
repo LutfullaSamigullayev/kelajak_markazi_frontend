@@ -24,6 +24,7 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [highContrast, setHighContrast] = useState(false);
+  const [lang, setLang] = useState<"UZ" | "RU">("UZ");
 
   return (
     <header className="sticky top-0 z-50 w-full transition-all duration-300">
