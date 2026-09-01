@@ -114,6 +114,13 @@ export default function FeaturedClubs() {
           ))}
         </div>
       </div>
+
+      {/* Dialog Modal */}
+      <EnrollmentModal
+        club={selectedClub}
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+      />
     </section>
   );
 }
