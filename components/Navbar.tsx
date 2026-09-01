@@ -80,6 +80,10 @@ export default function Navbar() {
               <Eye className="w-3.5 h-3.5" />
               <span className="hidden sm:inline">Maxsus Imkoniyatlar</span>
             </button>
+
+            {/* Language Switcher */}
+            <div className="flex items-center bg-white/10 rounded overflow-hidden p-0.5 border border-purple-400/20">
+            </div>
           </div>
         </div>
       </div>
