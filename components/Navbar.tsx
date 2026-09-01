@@ -67,6 +67,19 @@ export default function Navbar() {
           </div>
 
           <div className="flex items-center gap-3">
+            {/* High Contrast Mode */}
+            <button
+              onClick={toggleContrast}
+              className={`flex items-center gap-1 px-2 py-0.5 rounded transition-all ${
+                highContrast
+                  ? "bg-yellow-400 text-black font-bold"
+                  : "bg-white/10 hover:bg-white/20 text-white"
+              }`}
+              title="Ko'zi ojizlar uchun maxsus rejim"
+            >
+              <Eye className="w-3.5 h-3.5" />
+              <span className="hidden sm:inline">Maxsus Imkoniyatlar</span>
+            </button>
           </div>
         </div>
       </div>
