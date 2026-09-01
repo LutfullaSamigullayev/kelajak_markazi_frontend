@@ -83,6 +83,16 @@ export default function Navbar() {
 
             {/* Language Switcher */}
             <div className="flex items-center bg-white/10 rounded overflow-hidden p-0.5 border border-purple-400/20">
+              <button
+                onClick={() => setLang("UZ")}
+                className={`px-2 py-0.5 text-[11px] rounded font-bold transition-all ${
+                  lang === "UZ"
+                    ? "bg-[#BB94E8] text-[#2E0854]"
+                    : "text-purple-200 hover:text-white"
+                }`}
+              >
+                O'ZB
+              </button>
             </div>
           </div>
         </div>
