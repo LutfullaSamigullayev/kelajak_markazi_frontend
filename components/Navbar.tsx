@@ -93,6 +93,16 @@ export default function Navbar() {
               >
                 O'ZB
               </button>
+              <button
+                onClick={() => setLang("RU")}
+                className={`px-2 py-0.5 text-[11px] rounded font-bold transition-all ${
+                  lang === "RU"
+                    ? "bg-[#BB94E8] text-[#2E0854]"
+                    : "text-purple-200 hover:text-white"
+                }`}
+              >
+                РУС
+              </button>
             </div>
           </div>
         </div>
