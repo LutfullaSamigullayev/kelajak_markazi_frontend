@@ -188,6 +188,17 @@ export default function Navbar() {
               }
 
               return (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className={`px-3.5 py-2 rounded-lg text-sm font-semibold transition-all ${
+                    isActive
+                      ? "bg-[#F0E6FA] text-[#5C2D91] dark:bg-[#2E0854] dark:text-[#BB94E8]"
+                      : "text-[#1A1A1A] hover:text-[#5C2D91] hover:bg-purple-50 dark:text-gray-200 dark:hover:bg-purple-950/40"
+                  }`}
+                >
+                  {link.label}
+                </Link>
               );
             })}
           </div>
