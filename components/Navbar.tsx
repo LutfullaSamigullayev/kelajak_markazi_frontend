@@ -145,6 +145,20 @@ export default function Navbar() {
                     onMouseEnter={() => setActiveDropdown(link.label)}
                     onMouseLeave={() => setActiveDropdown(null)}
                   >
+                    <button
+                      className={`flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-sm font-semibold transition-all ${
+                        isActive
+                          ? "bg-[#F0E6FA] text-[#5C2D91] dark:bg-[#2E0854] dark:text-[#BB94E8]"
+                          : "text-[#1A1A1A] hover:text-[#5C2D91] hover:bg-purple-50 dark:text-gray-200 dark:hover:bg-purple-950/40"
+                      }`}
+                    >
+                      <span>{link.label}</span>
+                      <ChevronDown
+                        className={`w-4 h-4 transition-transform duration-200 ${
+                          activeDropdown === link.label ? "rotate-180 text-[#5C2D91]" : ""
+                        }`}
+                      />
+                    </button>
                   </div>
                 );
               }
