@@ -21,6 +21,14 @@ function InstagramIcon({ className }: { className?: string }) {
   );
 }
 
+function FacebookIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+    </svg>
+  );
+}
+
 export default function Footer() {
   return (
     <footer className="bg-gradient-to-b from-[#2E0854] via-[#240643] to-[#17032D] text-white pt-16 pb-8 border-t border-purple-900/60 relative overflow-hidden">
