@@ -226,6 +226,12 @@ export default function Navbar() {
           </div>
         </div>
       </nav>
+
+      {/* Mobile Drawer Menu */}
+      {mobileMenuOpen && (
+        <div className="lg:hidden fixed inset-x-0 top-[102px] bg-white dark:bg-[#120924] border-b border-[#E8DFED] dark:border-purple-900 shadow-2xl p-4 z-40 max-h-[85vh] overflow-y-auto animate-in slide-in-from-top duration-300">
+        </div>
+      )}
     </header>
   );
 }
