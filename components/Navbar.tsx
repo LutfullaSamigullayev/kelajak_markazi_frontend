@@ -202,6 +202,18 @@ export default function Navbar() {
               );
             })}
           </div>
+
+          {/* Desktop Right Action Buttons */}
+          <div className="hidden lg:flex items-center gap-3">
+            <Link
+              href="/clubs"
+              className="flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-[#5C2D91] to-[#3A1B78] hover:from-[#3A1B78] hover:to-[#2E0854] shadow-md shadow-purple-900/20 hover:shadow-lg hover:shadow-purple-900/30 transition-all hover:-translate-y-0.5 active:translate-y-0"
+            >
+              <BookOpen className="w-4 h-4 text-[#BB94E8]" />
+              <span>To'garakka Yozilish</span>
+            </Link>
+          </div>
+        </div>
       </nav>
     </header>
   );
