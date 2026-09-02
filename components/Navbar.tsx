@@ -137,6 +137,18 @@ export default function Navbar() {
                 (link.dropdown &&
                   link.dropdown.some((item) => pathname === item.href));
 
+              if (link.dropdown) {
+                return (
+                  <div
+                    key={link.label}
+                    className="relative"
+                    onMouseEnter={() => setActiveDropdown(link.label)}
+                    onMouseLeave={() => setActiveDropdown(null)}
+                  >
+                  </div>
+                );
+              }
+
               return (
               );
             })}
