@@ -159,6 +159,30 @@ export default function Navbar() {
                         }`}
                       />
                     </button>
+
+                    {/* Dropdown Menu Box */}
+                    {activeDropdown === link.label && (
+                      <div className="absolute top-full left-0 mt-1 w-72 rounded-2xl bg-white dark:bg-[#1D0F38] shadow-xl border border-[#E8DFED] dark:border-purple-900 p-2 z-50 animate-in fade-in slide-in-from-top-2 duration-200">
+                        {link.dropdown.map((item) => (
+                          <Link
+                            key={item.href}
+                            href={item.href}
+                            className={`flex flex-col gap-0.5 p-2.5 rounded-xl transition-all ${
+                              pathname === item.href
+                                ? "bg-[#F0E6FA] text-[#5C2D91] dark:bg-[#2E0854] dark:text-[#BB94E8] font-bold"
+                                : "hover:bg-purple-50 text-[#1A1A1A] dark:text-gray-200 hover:text-[#5C2D91] dark:hover:bg-purple-900/30"
+                            }`}
+                          >
+                            <span className="text-sm font-semibold">{item.label}</span>
+                            {item.description && (
+                              <span className="text-[11px] text-[#666666] dark:text-purple-300 font-normal">
+                                {item.description}
+                              </span>
+                            )}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
                   </div>
                 );
               }
