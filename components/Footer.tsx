@@ -41,6 +41,13 @@ function YoutubeIcon({ className }: { className?: string }) {
 export default function Footer() {
   return (
     <footer className="bg-gradient-to-b from-[#2E0854] via-[#240643] to-[#17032D] text-white pt-16 pb-8 border-t border-purple-900/60 relative overflow-hidden">
+      {/* Decorative Glow Elements */}
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#5C2D91]/20 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 right-10 w-80 h-80 bg-[#BB94E8]/10 rounded-full blur-3xl pointer-events-none" />
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-purple-800/40">
+      </div>
     </footer>
   );
 }
