@@ -213,6 +213,17 @@ export default function Navbar() {
               <span>To'garakka Yozilish</span>
             </Link>
           </div>
+
+          {/* Mobile Menu Button */}
+          <div className="flex lg:hidden items-center gap-2">
+            <button
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              className="p-2 rounded-xl text-[#3A1B78] bg-purple-50 dark:bg-purple-900/40 dark:text-purple-200 hover:bg-purple-100 transition-colors"
+              aria-label="Menyuni ochish"
+            >
+              {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
+          </div>
         </div>
       </nav>
     </header>
