@@ -256,6 +256,18 @@ export default function Navbar() {
                 );
               }
               return (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className={`px-4 py-2.5 rounded-lg text-sm font-semibold transition-colors ${
+                    pathname === link.href
+                      ? "bg-[#F0E6FA] text-[#5C2D91] font-bold"
+                      : "text-[#1A1A1A] hover:bg-purple-50 dark:text-gray-200"
+                  }`}
+                >
+                  {link.label}
+                </Link>
               );
             })}
           </div>
