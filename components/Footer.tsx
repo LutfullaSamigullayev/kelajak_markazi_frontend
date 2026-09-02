@@ -104,6 +104,46 @@ export default function Footer() {
               </a>
             </div>
           </div>
+
+
+          {/* Col 2: Quick Links */}
+          <div className="flex flex-col gap-3">
+            <h3 className="text-base font-bold text-white tracking-wide border-l-2 border-[#BB94E8] pl-2.5">
+              Sayt Bo'limlari
+            </h3>
+            <ul className="flex flex-col gap-2 text-sm text-purple-200/80">
+              <li>
+                <Link href="/" className="hover:text-[#BB94E8] transition-colors flex items-center gap-1 group">
+                  <ChevronRight className="w-3.5 h-3.5 text-purple-400 group-hover:translate-x-1 transition-transform" />
+                  <span>Bosh sahifa</span>
+                </Link>
+              </li>
+              <li>
+                <Link href="/about-us" className="hover:text-[#BB94E8] transition-colors flex items-center gap-1 group">
+                  <ChevronRight className="w-3.5 h-3.5 text-purple-400 group-hover:translate-x-1 transition-transform" />
+                  <span>Biz haqimizda</span>
+                </Link>
+              </li>
+              <li>
+                <Link href="/leadership" className="hover:text-[#BB94E8] transition-colors flex items-center gap-1 group">
+                  <ChevronRight className="w-3.5 h-3.5 text-purple-400 group-hover:translate-x-1 transition-transform" />
+                  <span>Rahbariyat</span>
+                </Link>
+              </li>
+              <li>
+                <Link href="/clubs" className="hover:text-[#BB94E8] transition-colors flex items-center gap-1 group">
+                  <ChevronRight className="w-3.5 h-3.5 text-purple-400 group-hover:translate-x-1 transition-transform" />
+                  <span>To'garaklar Katalogi</span>
+                </Link>
+              </li>
+              <li>
+                <Link href="/news" className="hover:text-[#BB94E8] transition-colors flex items-center gap-1 group">
+                  <ChevronRight className="w-3.5 h-3.5 text-purple-400 group-hover:translate-x-1 transition-transform" />
+                  <span>Yangiliklar va Tadbirlar</span>
+                </Link>
+              </li>
+            </ul>
+          </div>
       </div>
     </footer>
   );
