@@ -270,6 +270,17 @@ export default function Navbar() {
                 </Link>
               );
             })}
+
+            <div className="mt-4 pt-4 border-t border-purple-100 dark:border-purple-900 flex flex-col gap-2">
+              <Link
+                href="/clubs"
+                onClick={() => setMobileMenuOpen(false)}
+                className="w-full flex items-center justify-center gap-2 py-3 rounded-xl font-bold text-white bg-gradient-to-r from-[#5C2D91] to-[#3A1B78] shadow-md shadow-purple-900/20"
+              >
+                <BookOpen className="w-4 h-4 text-[#BB94E8]" />
+                <span>To'garakka Yozilish</span>
+              </Link>
+            </div>
           </div>
         </div>
       )}
