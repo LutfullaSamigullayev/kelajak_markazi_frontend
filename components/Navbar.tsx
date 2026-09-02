@@ -234,6 +234,25 @@ export default function Navbar() {
             {navLinks.map((link) => {
               if (link.dropdown) {
                 return (
+                  <div key={link.label} className="flex flex-col gap-1 border-b border-purple-100 dark:border-purple-950 pb-2">
+                    <span className="px-3 py-1.5 text-xs font-bold uppercase text-[#5C2D91] dark:text-[#BB94E8] tracking-wider">
+                      {link.label}
+                    </span>
+                    {link.dropdown.map((item) => (
+                      <Link
+                        key={item.href}
+                        href={item.href}
+                        onClick={() => setMobileMenuOpen(false)}
+                        className={`px-4 py-2 rounded-lg text-sm font-semibold transition-colors ${
+                          pathname === item.href
+                            ? "bg-[#F0E6FA] text-[#5C2D91] font-bold"
+                            : "text-[#1A1A1A] hover:bg-purple-50 dark:text-gray-200"
+                        }`}
+                      >
+                        {item.label}
+                      </Link>
+                    ))}
+                  </div>
                 );
               }
               return (
