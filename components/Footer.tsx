@@ -47,6 +47,63 @@ export default function Footer() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-purple-800/40">
+          {/* Col 1: About Brand */}
+          <div className="lg:col-span-2 flex flex-col gap-4">
+            <Link href="/" className="flex items-center gap-3 hover:opacity-90 transition-opacity">
+              <div className="p-2 rounded-xl bg-white/10 backdrop-blur-md border border-purple-400/20">
+                <Image
+                  src="/kelajak.svg"
+                  alt="Kelajak Markazi Logo"
+                  width={160}
+                  height={45}
+                  className="h-10 w-auto object-contain brightness-0 invert"
+                />
+              </div>
+            </Link>
+
+            <p className="text-sm text-purple-200/80 leading-relaxed max-w-sm">
+              O'quvchi-yoshlarning intellektual va ijodiy salohiyatini oshirish, zamonaviy kasblar, IT va xorijiy tillarni puxta o'zlashtirishlari uchun yaratilgan respublika ta'lim platformasi.
+            </p>
+
+            <div className="flex items-center gap-3 pt-2">
+              <a
+                href="https://t.me"
+                target="_blank"
+                rel="noreferrer"
+                className="w-9 h-9 rounded-xl bg-purple-900/60 hover:bg-[#5C2D91] border border-purple-700/50 flex items-center justify-center text-purple-200 hover:text-white transition-all hover:scale-110"
+                aria-label="Telegram"
+              >
+                <Send className="w-4 h-4" />
+              </a>
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noreferrer"
+                className="w-9 h-9 rounded-xl bg-purple-900/60 hover:bg-[#5C2D91] border border-purple-700/50 flex items-center justify-center text-purple-200 hover:text-white transition-all hover:scale-110"
+                aria-label="Instagram"
+              >
+                <InstagramIcon className="w-4 h-4" />
+              </a>
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noreferrer"
+                className="w-9 h-9 rounded-xl bg-purple-900/60 hover:bg-[#5C2D91] border border-purple-700/50 flex items-center justify-center text-purple-200 hover:text-white transition-all hover:scale-110"
+                aria-label="Facebook"
+              >
+                <FacebookIcon className="w-4 h-4" />
+              </a>
+              <a
+                href="https://youtube.com"
+                target="_blank"
+                rel="noreferrer"
+                className="w-9 h-9 rounded-xl bg-purple-900/60 hover:bg-[#5C2D91] border border-purple-700/50 flex items-center justify-center text-purple-200 hover:text-white transition-all hover:scale-110"
+                aria-label="YouTube"
+              >
+                <YoutubeIcon className="w-4 h-4" />
+              </a>
+            </div>
+          </div>
       </div>
     </footer>
   );
