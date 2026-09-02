@@ -116,6 +116,18 @@ export default function Navbar() {
             : "bg-white dark:bg-[#120924] py-4 border-b border-[#E8DFED]"
         }`}
       >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+          {/* Brand Logo */}
+          <Link href="/" className="flex items-center gap-3 group hover:opacity-95 transition-opacity">
+            <Image
+              src="/kelajak.svg"
+              alt="Kelajak Markazi Logo"
+              width={160}
+              height={45}
+              className="h-10 sm:h-11 w-auto object-contain dark:brightness-125"
+              priority
+            />
+          </Link>
       </nav>
     </header>
   );
