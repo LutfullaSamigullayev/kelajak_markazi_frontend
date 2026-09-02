@@ -128,6 +128,19 @@ export default function Navbar() {
               priority
             />
           </Link>
+
+          {/* Desktop Navigation Links */}
+          <div className="hidden lg:flex items-center gap-1">
+            {navLinks.map((link) => {
+              const isActive =
+                pathname === link.href ||
+                (link.dropdown &&
+                  link.dropdown.some((item) => pathname === item.href));
+
+              return (
+              );
+            })}
+          </div>
       </nav>
     </header>
   );
