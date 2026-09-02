@@ -144,6 +144,45 @@ export default function Footer() {
               </li>
             </ul>
           </div>
+
+          {/* Col 3: Services & Direction */}
+          <div className="flex flex-col gap-3">
+            <h3 className="text-base font-bold text-white tracking-wide border-l-2 border-[#BB94E8] pl-2.5">
+              Kelajak Yo'nalishlari
+            </h3>
+            <ul className="flex flex-col gap-2 text-sm text-purple-200/80">
+              <li>
+                <Link href="/clubs?cat=it" className="hover:text-[#BB94E8] transition-colors flex items-center gap-1 group">
+                  <ChevronRight className="w-3.5 h-3.5 text-purple-400 group-hover:translate-x-1 transition-transform" />
+                  <span>IT va Web Dasturlash</span>
+                </Link>
+              </li>
+              <li>
+                <Link href="/clubs?cat=languages" className="hover:text-[#BB94E8] transition-colors flex items-center gap-1 group">
+                  <ChevronRight className="w-3.5 h-3.5 text-purple-400 group-hover:translate-x-1 transition-transform" />
+                  <span>Xorijiy Tillar (IELTS/CEFR)</span>
+                </Link>
+              </li>
+              <li>
+                <Link href="/clubs?cat=science" className="hover:text-[#BB94E8] transition-colors flex items-center gap-1 group">
+                  <ChevronRight className="w-3.5 h-3.5 text-purple-400 group-hover:translate-x-1 transition-transform" />
+                  <span>Robototexnika va STEM</span>
+                </Link>
+              </li>
+              <li>
+                <Link href="/bams" className="hover:text-[#BB94E8] transition-colors flex items-center gap-1 group">
+                  <ChevronRight className="w-3.5 h-3.5 text-purple-400 group-hover:translate-x-1 transition-transform" />
+                  <span>Hududiy Markazlar</span>
+                </Link>
+              </li>
+              <li>
+                <Link href="/school-counselors" className="hover:text-[#BB94E8] transition-colors flex items-center gap-1 group">
+                  <ChevronRight className="w-3.5 h-3.5 text-purple-400 group-hover:translate-x-1 transition-transform" />
+                  <span>Maktab Maslahatchilari</span>
+                </Link>
+              </li>
+            </ul>
+          </div>
       </div>
     </footer>
   );
