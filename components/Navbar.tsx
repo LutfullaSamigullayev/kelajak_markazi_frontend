@@ -107,6 +107,16 @@ export default function Navbar() {
           </div>
         </div>
       </div>
+
+      {/* Main Navbar */}
+      <nav
+        className={`w-full transition-all duration-300 ${
+          isScrolled
+            ? "bg-white/95 dark:bg-[#120924]/95 backdrop-blur-md shadow-lg shadow-purple-900/5 py-3 border-b border-[#E8DFED]"
+            : "bg-white dark:bg-[#120924] py-4 border-b border-[#E8DFED]"
+        }`}
+      >
+      </nav>
     </header>
   );
 }
