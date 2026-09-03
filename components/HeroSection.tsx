@@ -56,6 +56,18 @@ export default function HeroSection() {
                 <span>Markaz Video Taqdimoti</span>
               </Link>
             </div>
+
+            {/* Badges / Guarantees */}
+            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-6 pt-4 border-t border-purple-400/20 text-xs text-purple-200 font-semibold">
+              <div className="flex items-center gap-2">
+                <ShieldCheck className="w-4 h-4 text-[#BB94E8]" />
+                <span>Davlat sertifikati beriladi</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Award className="w-4 h-4 text-[#BB94E8]" />
+                <span>850+ sertifikatlangan ustozlar</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
