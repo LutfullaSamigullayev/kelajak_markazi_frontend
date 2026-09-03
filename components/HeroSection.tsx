@@ -36,6 +36,26 @@ export default function HeroSection() {
             <p className="text-base sm:text-lg text-purple-100/90 leading-relaxed font-normal max-w-2xl mx-auto lg:mx-0">
               O'zbekiston Respublikasi "Kelajak Markazi" — yoshlarning IT, dasturlash, xorijiy tillar hamda zamonaviy STEM fanlarini puxta o'rganishlari uchun zamonaviy imkoniyatlar makonidir.
             </p>
+
+            {/* CTAs */}
+            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+              <Link
+                href="/clubs"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-2xl bg-white text-[#2E0854] font-black text-base hover:bg-purple-50 shadow-xl shadow-purple-950/40 hover:scale-105 active:scale-95 transition-all"
+              >
+                <BookOpen className="w-5 h-5 text-[#5C2D91]" />
+                <span>To'garaklarga Yozilish</span>
+                <ArrowRight className="w-4 h-4 text-[#5C2D91]" />
+              </Link>
+
+              <Link
+                href="/about-us"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-4 rounded-2xl bg-white/10 hover:bg-white/20 border border-white/30 text-white font-bold text-base backdrop-blur-md hover:border-white transition-all"
+              >
+                <Play className="w-4 h-4 fill-white text-white" />
+                <span>Markaz Video Taqdimoti</span>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
