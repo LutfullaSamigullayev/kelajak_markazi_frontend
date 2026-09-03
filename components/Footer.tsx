@@ -183,6 +183,36 @@ export default function Footer() {
               </li>
             </ul>
           </div>
+
+          {/* Col 4: Contact info */}
+          <div className="flex flex-col gap-3">
+            <h3 className="text-base font-bold text-white tracking-wide border-l-2 border-[#BB94E8] pl-2.5">
+              Bog'lanish
+            </h3>
+            <div className="flex flex-col gap-3 text-sm text-purple-200/80">
+              <div className="flex items-start gap-2.5">
+                <MapPin className="w-4 h-4 text-[#BB94E8] shrink-0 mt-1" />
+                <span>Toshkent shahar, Navoiy ko'chasi, 2A-uy</span>
+              </div>
+              <div className="flex items-center gap-2.5">
+                <Phone className="w-4 h-4 text-[#BB94E8] shrink-0" />
+                <a href="tel:+998712000011" className="hover:text-white transition-colors">
+                  +998 (71) 200-00-11
+                </a>
+              </div>
+              <div className="flex items-center gap-2.5">
+                <Mail className="w-4 h-4 text-[#BB94E8] shrink-0" />
+                <a href="mailto:info@kelajak.uz" className="hover:text-white transition-colors">
+                  info@kelajak.uz
+                </a>
+              </div>
+              <div className="flex items-center gap-2.5">
+                <Clock className="w-4 h-4 text-[#BB94E8] shrink-0" />
+                <span>Dush - Shanba: 09:00 - 18:00</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
   );
