@@ -213,6 +213,22 @@ export default function Footer() {
             </div>
           </div>
         </div>
+
+        {/* Bottom Bar */}
+        <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-purple-300/70">
+          <p>© 2026 Respublika "Kelajak Markazi". Barcha huquqlar himoyalangan.</p>
+          <div className="flex items-center gap-6">
+            <Link href="/privacy" className="hover:text-[#BB94E8] transition-colors">
+              Maxfiylik Siyosati
+            </Link>
+            <Link href="/terms" className="hover:text-[#BB94E8] transition-colors">
+              Foydalanish Qoidalari
+            </Link>
+            <Link href="/contact" className="hover:text-[#BB94E8] transition-colors">
+              Qayta Aloqa
+            </Link>
+          </div>
+        </div>
       </div>
     </footer>
   );
