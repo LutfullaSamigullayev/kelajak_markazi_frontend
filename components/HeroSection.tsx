@@ -69,6 +69,19 @@ export default function HeroSection() {
               </div>
             </div>
           </div>
+
+          {/* Right Column: Hero Visual Card */}
+          <div className="lg:col-span-5 relative">
+            <div className="relative mx-auto max-w-md lg:max-w-none rounded-3xl p-2 bg-gradient-to-tr from-[#BB94E8]/40 via-white/20 to-transparent shadow-2xl backdrop-blur-xl">
+              <div className="relative rounded-2xl overflow-hidden bg-[#1D0F38] border border-purple-400/30">
+                <img
+                  src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=800"
+                  alt="Kelajak Markazi o'quvchilari"
+                  className="w-full h-80 lg:h-96 object-cover opacity-90 hover:scale-105 transition-transform duration-700"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
