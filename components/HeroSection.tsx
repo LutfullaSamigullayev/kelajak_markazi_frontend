@@ -79,6 +79,20 @@ export default function HeroSection() {
                   alt="Kelajak Markazi o'quvchilari"
                   className="w-full h-80 lg:h-96 object-cover opacity-90 hover:scale-105 transition-transform duration-700"
                 />
+
+                {/* Overlay Floating Glass Badge */}
+                <div className="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-[#2E0854]/90 backdrop-blur-md border border-purple-400/30 text-white flex items-center justify-between shadow-lg">
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-lg bg-[#5C2D91] flex items-center justify-center font-bold text-lg text-[#BB94E8]">
+                      14+
+                    </div>
+                    <div className="flex flex-col">
+                      <span className="text-xs text-purple-200 font-medium">Barcha viloyatlarda</span>
+                      <span className="text-sm font-bold text-white">Hududiy Filiallar Faol</span>
+                    </div>
+                  </div>
+                  <Badge variant="accent">Qabul Ochiq</Badge>
+                </div>
               </div>
             </div>
           </div>
