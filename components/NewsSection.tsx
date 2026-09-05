@@ -36,6 +36,10 @@ export default function NewsSection() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {newsData.map((article) => (
             <Link key={article.id} href={`/news`}>
+              <Card className="h-full flex flex-col justify-between overflow-hidden hover:border-[#5C2D91] hover:shadow-xl hover:shadow-purple-900/10 hover:-translate-y-1 transition-all duration-300 group bg-white dark:bg-[#120924]">
+                <div>
+                </div>
+              </Card>
             </Link>
           ))}
         </div>
