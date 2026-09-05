@@ -98,6 +98,12 @@ export default function StudentCouncilPage() {
                 </div>
 
                 <CardHeader>
+                  <CardTitle className="text-lg font-black text-[#3A1B78] dark:text-white">
+                    {member.name}
+                  </CardTitle>
+                  <span className="text-xs font-bold text-[#5C2D91] dark:text-[#BB94E8]">
+                    {member.role}
+                  </span>
                 </CardHeader>
               </Card>
             ))}
