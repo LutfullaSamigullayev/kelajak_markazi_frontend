@@ -38,6 +38,16 @@ export default function NewsSection() {
             <Link key={article.id} href={`/news`}>
               <Card className="h-full flex flex-col justify-between overflow-hidden hover:border-[#5C2D91] hover:shadow-xl hover:shadow-purple-900/10 hover:-translate-y-1 transition-all duration-300 group bg-white dark:bg-[#120924]">
                 <div>
+                  <div className="relative h-48 w-full overflow-hidden bg-purple-100">
+                    <img
+                      src={article.image}
+                      alt={article.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute top-3 left-3">
+                      <Badge variant="purple">{article.category}</Badge>
+                    </div>
+                  </div>
                 </div>
               </Card>
             </Link>
