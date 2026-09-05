@@ -82,6 +82,12 @@ export default function StudentCouncilPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {councilMembers.map((member) => (
+              <Card
+                key={member.id}
+                className="overflow-hidden border-[#E8DFED] dark:border-purple-900 shadow-lg hover:shadow-xl transition-all bg-white dark:bg-[#1D0F38]"
+              >
+                </div>
+              </Card>
             ))}
           </div>
         </div>
