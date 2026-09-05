@@ -86,6 +86,15 @@ export default function StudentCouncilPage() {
                 key={member.id}
                 className="overflow-hidden border-[#E8DFED] dark:border-purple-900 shadow-lg hover:shadow-xl transition-all bg-white dark:bg-[#1D0F38]"
               >
+                <div className="h-60 w-full overflow-hidden bg-purple-100 relative">
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute top-3 left-3">
+                    <Badge variant="purple">{member.region}</Badge>
+                  </div>
                 </div>
               </Card>
             ))}
