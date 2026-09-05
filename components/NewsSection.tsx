@@ -72,6 +72,16 @@ export default function NewsSection() {
                     </p>
                   </CardContent>
                 </div>
+
+                <CardFooter className="pt-3 pb-5 border-t border-[#E8DFED] dark:border-purple-900 flex items-center justify-between text-xs font-bold text-[#5C2D91] dark:text-[#BB94E8]">
+                  <span className="flex items-center gap-1 text-[#666666] dark:text-purple-300 font-normal">
+                    <User className="w-3.5 h-3.5 text-[#5C2D91]" />
+                    {article.author}
+                  </span>
+                  <span className="flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                    Batafsil O'qish <ArrowRight className="w-3.5 h-3.5" />
+                  </span>
+                </CardFooter>
               </Card>
             </Link>
           ))}
