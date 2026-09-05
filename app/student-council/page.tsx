@@ -79,6 +79,11 @@ export default function StudentCouncilPage() {
           <h2 className="text-2xl font-black text-[#3A1B78] dark:text-[#BB94E8] text-center">
             Kengash Yetakchilari
           </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {councilMembers.map((member) => (
+            ))}
+          </div>
         </div>
       </div>
     </div>
