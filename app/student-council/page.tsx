@@ -73,6 +73,13 @@ export default function StudentCouncilPage() {
             </p>
           </div>
         </div>
+
+        {/* Council Members Grid */}
+        <div className="flex flex-col gap-6">
+          <h2 className="text-2xl font-black text-[#3A1B78] dark:text-[#BB94E8] text-center">
+            Kengash Yetakchilari
+          </h2>
+        </div>
       </div>
     </div>
   );
