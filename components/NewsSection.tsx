@@ -22,6 +22,14 @@ export default function NewsSection() {
               Respublika Kelajak Markazlari hayotidagi eng so'nggi yangiliklar va e'lonlar.
             </p>
           </div>
+
+          <Link
+            href="/news"
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl border border-[#5C2D91] text-[#5C2D91] dark:border-[#BB94E8] dark:text-[#BB94E8] font-bold text-sm hover:bg-purple-50 dark:hover:bg-purple-900/40 transition-colors"
+          >
+            <span>Barcha Yangiliklar</span>
+            <ArrowRight className="w-4 h-4" />
+          </Link>
         </div>
         </div>
       </div>
