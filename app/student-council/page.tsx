@@ -46,6 +46,33 @@ export default function StudentCouncilPage() {
             Iqtidorli va faol o'quvchi-yoshlarning yetakchilik salohiyatini oshirish hamda tashabbuslarini qo'llab-quvvatlash tizimi.
           </p>
         </div>
+
+        {/* Council Initiatives */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="p-6 rounded-2xl bg-gradient-to-br from-[#5C2D91] to-[#3A1B78] text-white flex flex-col gap-3 shadow-xl">
+            <Trophy className="w-8 h-8 text-[#BB94E8]" />
+            <h3 className="text-xl font-bold">Yoshlar Loyihalari Granti</h3>
+            <p className="text-xs text-purple-200">
+              Kengash a'zolari tomonidan ilgari surilgan eng yaxshi 50 ta IT va ta'limiy tashabbuslar moliyalashtiriladi.
+            </p>
+          </div>
+
+          <div className="p-6 rounded-2xl bg-gradient-to-br from-[#3A1B78] to-[#2E0854] text-white flex flex-col gap-3 shadow-xl">
+            <HeartHandshake className="w-8 h-8 text-[#BB94E8]" />
+            <h3 className="text-xl font-bold">Tengdoshdan-Tengdoshga</h3>
+            <p className="text-xs text-purple-200">
+              Iqtidorli o'quvchilar tengdoshlariga bepul mentorlik qiluvchi volontyorlik harakati.
+            </p>
+          </div>
+
+          <div className="p-6 rounded-2xl bg-gradient-to-br from-[#2E0854] to-[#120924] text-white flex flex-col gap-3 shadow-xl border border-purple-800">
+            <Award className="w-8 h-8 text-[#BB94E8]" />
+            <h3 className="text-xl font-bold">Xalqaro Sammitlar</h3>
+            <p className="text-xs text-purple-200">
+              Har yili eng faol 100 nafar kengash a'zolari xalqaro yoshlar forumi va sammitlarida ishtirok etadi.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
