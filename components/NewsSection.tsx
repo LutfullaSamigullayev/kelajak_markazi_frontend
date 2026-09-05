@@ -65,6 +65,12 @@ export default function NewsSection() {
                       {article.title}
                     </CardTitle>
                   </CardHeader>
+
+                  <CardContent className="pt-0">
+                    <p className="text-xs text-[#666666] dark:text-purple-200 line-clamp-3 leading-relaxed">
+                      {article.summary}
+                    </p>
+                  </CardContent>
                 </div>
               </Card>
             </Link>
