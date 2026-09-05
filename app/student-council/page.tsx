@@ -2,6 +2,32 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Sparkles, Trophy, Users, Star, Award, ShieldAlert, HeartHandshake } from "lucide-react";
 
+const councilMembers = [
+  {
+    id: "m-1",
+    name: "Ergashova Mohira",
+    role: "Respublika O'quvchilar Kengashi Raisi",
+    region: "Toshkent shahri",
+    project: "Raqamli Tenglik loyihasi tashabbuskori",
+    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=400",
+  },
+  {
+    id: "m-2",
+    name: "Akramov Diyorbek",
+    role: "IT va Innovatsiyalar Bo'limi Yetakchisi",
+    region: "Samarqand viloyati",
+    project: "Yosh Dasturchilar Hamjamiyati yo'lboshchisi",
+    image: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&q=80&w=400",
+  },
+  {
+    id: "m-3",
+    name: "Ismoilova Sevinch",
+    role: "Xalqaro Aloqalar va Tillar Kengashi",
+    region: "Farg'ona viloyati",
+    project: "Youth Speaking Club koordinatori",
+    image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&q=80&w=400",
+  },
+];
 
 export default function StudentCouncilPage() {
   return (
