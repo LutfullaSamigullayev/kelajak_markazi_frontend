@@ -35,6 +35,8 @@ export default function NewsSection() {
         {/* News Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {newsData.map((article) => (
+            <Link key={article.id} href={`/news`}>
+            </Link>
           ))}
         </div>
       </div>
