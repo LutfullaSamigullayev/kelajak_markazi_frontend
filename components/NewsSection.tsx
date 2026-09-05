@@ -31,6 +31,11 @@ export default function NewsSection() {
             <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
+
+        {/* News Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {newsData.map((article) => (
+          ))}
         </div>
       </div>
     </section>
