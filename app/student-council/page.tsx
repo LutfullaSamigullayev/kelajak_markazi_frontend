@@ -105,6 +105,10 @@ export default function StudentCouncilPage() {
                     {member.role}
                   </span>
                 </CardHeader>
+
+                <CardContent className="pt-0 text-xs text-[#666666] dark:text-purple-200">
+                  <p><b>Asosiy Loyihasi:</b> {member.project}</p>
+                </CardContent>
               </Card>
             ))}
           </div>
