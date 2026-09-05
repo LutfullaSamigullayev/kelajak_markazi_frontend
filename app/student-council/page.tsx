@@ -96,6 +96,9 @@ export default function StudentCouncilPage() {
                     <Badge variant="purple">{member.region}</Badge>
                   </div>
                 </div>
+
+                <CardHeader>
+                </CardHeader>
               </Card>
             ))}
           </div>
