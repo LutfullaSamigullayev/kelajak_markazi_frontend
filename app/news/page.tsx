@@ -25,6 +25,11 @@ export default function NewsPage() {
         {/* News Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {newsData.map((article) => (
+            <Card
+              key={article.id}
+              className="h-full flex flex-col justify-between overflow-hidden hover:border-[#5C2D91] hover:shadow-xl transition-all duration-300 bg-white dark:bg-[#1D0F38]"
+            >
+            </Card>
           ))}
         </div>
       </div>
