@@ -89,6 +89,51 @@ export default function SchoolCounselorsPage() {
             onChange={(e) => setSearch(e.target.value)}
           />
         </div>
+
+        {/* Counselors Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {filtered.map((item) => (
+            <Card
+              key={item.id}
+              className="border-[#E8DFED] dark:border-purple-900 shadow-lg hover:shadow-xl transition-all bg-white dark:bg-[#1D0F38] p-6"
+            >
+              <div className="flex items-start gap-4">
+                <div className="w-14 h-14 rounded-2xl bg-[#F0E6FA] dark:bg-[#2E0854] flex items-center justify-center text-[#5C2D91] dark:text-[#BB94E8] shrink-0 font-bold text-xl border border-purple-200">
+                  <UserCheck className="w-7 h-7" />
+                </div>
+
+                <div className="flex flex-col gap-2 w-full">
+                  <div className="flex items-center justify-between gap-2">
+                    <Badge variant="purple">{item.region}</Badge>
+                    <span className="text-xs font-bold text-amber-500">
+                      ★ {item.rating} ({item.experience})
+                    </span>
+                  </div>
+
+                  <h3 className="text-lg font-black text-[#3A1B78] dark:text-white">
+                    {item.name}
+                  </h3>
+                  <p className="text-xs font-bold text-[#5C2D91] dark:text-[#BB94E8]">
+                    {item.role}
+                  </p>
+
+                  <div className="flex flex-col gap-1.5 pt-3 border-t border-[#E8DFED] dark:border-purple-900 text-xs text-[#666666] dark:text-purple-200">
+                    <div className="flex items-center gap-2">
+                      <School className="w-3.5 h-3.5 text-[#5C2D91]" />
+                      <span>{item.school}</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Phone className="w-3.5 h-3.5 text-[#5C2D91]" />
+                      <a href={`tel:${item.phone}`} className="font-bold text-[#5C2D91] dark:text-[#BB94E8]">
+                        {item.phone}
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Card>
+          ))}
+        </div>
       </div>
     </div>
   );
