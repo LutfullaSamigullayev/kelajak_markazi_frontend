@@ -54,6 +54,7 @@ const counselorsList = [
 ];
 
 export default function SchoolCounselorsPage() {
+  const [search, setSearch] = useState("");
 
   return (
     <div className="py-16 bg-[#F9F6FC] dark:bg-[#120924] min-h-screen">
