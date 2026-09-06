@@ -29,6 +29,18 @@ export default function NewsPage() {
               key={article.id}
               className="h-full flex flex-col justify-between overflow-hidden hover:border-[#5C2D91] hover:shadow-xl transition-all duration-300 bg-white dark:bg-[#1D0F38]"
             >
+              <div>
+                <div className="relative h-48 w-full overflow-hidden bg-purple-100">
+                  <img
+                    src={article.image}
+                    alt={article.title}
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute top-3 left-3">
+                    <Badge variant="purple">{article.category}</Badge>
+                  </div>
+                </div>
+              </div>
             </Card>
           ))}
         </div>
