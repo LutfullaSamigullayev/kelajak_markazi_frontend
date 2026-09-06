@@ -57,6 +57,12 @@ export default function NewsPage() {
                     {article.title}
                   </CardTitle>
                 </CardHeader>
+
+                <CardContent className="pt-0">
+                  <p className="text-xs text-[#666666] dark:text-purple-200 leading-relaxed">
+                    {article.content}
+                  </p>
+                </CardContent>
               </div>
             </Card>
           ))}
