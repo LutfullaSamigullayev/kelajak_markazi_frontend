@@ -65,6 +65,19 @@ export default function SchoolCounselorsPage() {
   return (
     <div className="py-16 bg-[#F9F6FC] dark:bg-[#120924] min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-10">
+        {/* Header */}
+        <div className="text-center flex flex-col items-center gap-3 max-w-2xl mx-auto">
+          <Badge variant="purple">
+            <Sparkles className="w-3.5 h-3.5 mr-1" />
+            Maktab Maslahatchilari
+          </Badge>
+          <h1 className="text-4xl font-black text-[#3A1B78] dark:text-[#BB94E8]">
+            Maktab Psixologlari va Maslahatchilari Catalogi
+          </h1>
+          <p className="text-sm text-[#666666] dark:text-purple-200">
+            O'quvchilar va validaynlar uchun kasbga yo'naltirish, psixologik ko'mak va maslahat xizmati.
+          </p>
+        </div>
       </div>
     </div>
   );
