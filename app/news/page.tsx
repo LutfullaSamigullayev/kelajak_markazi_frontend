@@ -43,6 +43,10 @@ export default function NewsPage() {
 
                 <CardHeader className="pb-2">
                   <div className="flex items-center justify-between text-xs text-[#666666] dark:text-purple-300 mb-2">
+                    <span className="flex items-center gap-1">
+                      <Calendar className="w-3.5 h-3.5 text-[#5C2D91]" />
+                      {article.date}
+                    </span>
                   </div>
                 </CardHeader>
               </div>
