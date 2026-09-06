@@ -52,6 +52,10 @@ export default function NewsPage() {
                       {article.readTime}
                     </span>
                   </div>
+
+                  <CardTitle className="text-lg font-black text-[#1A1A1A] dark:text-white line-clamp-2 leading-snug">
+                    {article.title}
+                  </CardTitle>
                 </CardHeader>
               </div>
             </Card>
