@@ -78,6 +78,17 @@ export default function SchoolCounselorsPage() {
             O'quvchilar va validaynlar uchun kasbga yo'naltirish, psixologik ko'mak va maslahat xizmati.
           </p>
         </div>
+
+        {/* Search */}
+        <div className="max-w-md mx-auto w-full relative">
+          <Search className="w-4 h-4 absolute left-3.5 top-3.5 text-[#5C2D91]" />
+          <Input
+            placeholder="Maslahatchi ismi, maktab yoki viloyat bo'yicha qidiruv..."
+            className="pl-10 h-11"
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+          />
+        </div>
       </div>
     </div>
   );
