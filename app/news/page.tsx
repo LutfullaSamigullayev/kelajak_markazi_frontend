@@ -40,6 +40,11 @@ export default function NewsPage() {
                     <Badge variant="purple">{article.category}</Badge>
                   </div>
                 </div>
+
+                <CardHeader className="pb-2">
+                  <div className="flex items-center justify-between text-xs text-[#666666] dark:text-purple-300 mb-2">
+                  </div>
+                </CardHeader>
               </div>
             </Card>
           ))}
