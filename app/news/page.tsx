@@ -21,6 +21,12 @@ export default function NewsPage() {
             Respublika Kelajak Markazlari bo'yicha eng so'nggi ma'lumotlar va tadbirlar dayjesti.
           </p>
         </div>
+
+        {/* News Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {newsData.map((article) => (
+          ))}
+        </div>
       </div>
     </div>
   );
