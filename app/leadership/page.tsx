@@ -39,6 +39,13 @@ export default function LeadershipPage() {
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 p-6 sm:p-8">
                 {/* Left: Photo & Contact Info */}
                 <div className="lg:col-span-4 flex flex-col items-center lg:items-start text-center lg:text-left gap-4 border-b lg:border-b-0 lg:border-r border-[#E8DFED] dark:border-purple-900 pb-6 lg:pb-0 lg:pr-8">
+                  <div className="w-36 h-36 rounded-2xl overflow-hidden border-2 border-[#BB94E8] shadow-lg shrink-0">
+                    <img
+                      src={leader.image}
+                      alt={leader.name}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
                 </div>
               </div>
             </Card>
