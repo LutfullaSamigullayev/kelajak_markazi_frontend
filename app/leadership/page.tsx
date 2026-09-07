@@ -32,6 +32,11 @@ export default function LeadershipPage() {
         {/* Leadership List */}
         <div className="flex flex-col gap-8">
           {leadershipData.map((leader) => (
+            <Card
+              key={leader.id}
+              className="border-[#E8DFED] dark:border-purple-900 shadow-xl bg-white dark:bg-[#1D0F38] overflow-hidden"
+            >
+            </Card>
           ))}
         </div>
       </div>
