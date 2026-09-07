@@ -168,6 +168,9 @@ export default function LessonSchedulePage() {
                       </Card>
                     ))
                   ) : (
+                    <div className="col-span-full py-12 text-center text-muted-foreground font-bold">
+                      Ushbu kunda rejalashtirilgan ochiq darslar mavjud emas.
+                    </div>
                   )}
                 </div>
               </TabsContent>
