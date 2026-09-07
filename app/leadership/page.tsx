@@ -46,6 +46,12 @@ export default function LeadershipPage() {
                       className="w-full h-full object-cover"
                     />
                   </div>
+
+                  <div className="flex flex-col">
+                    <h2 className="text-xl font-extrabold text-[#3A1B78] dark:text-white">
+                      {leader.name}
+                    </h2>
+                  </div>
                 </div>
               </div>
             </Card>
