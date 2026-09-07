@@ -61,6 +61,12 @@ export default function LeadershipPage() {
                       <Clock className="w-4 h-4 text-[#5C2D91] shrink-0" />
                       <span><b>Qabul kunlari:</b> {leader.receptionDays}</span>
                     </div>
+                    <div className="flex items-center justify-center lg:justify-start gap-2">
+                      <Phone className="w-4 h-4 text-[#5C2D91] shrink-0" />
+                      <a href={`tel:${leader.phone}`} className="font-bold text-[#5C2D91] dark:text-[#BB94E8] hover:underline">
+                        {leader.phone}
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
