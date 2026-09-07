@@ -73,6 +73,18 @@ export default function LeadershipPage() {
                     </div>
                   </div>
                 </div>
+
+                {/* Right: Biography & Accordion Sections */}
+                <div className="lg:col-span-8 flex flex-col gap-4">
+                  <div className="flex flex-col gap-1">
+                    <span className="text-xs font-bold text-[#5C2D91] dark:text-[#BB94E8] uppercase tracking-wider">
+                      Qisqacha Ma'lumot
+                    </span>
+                    <p className="text-sm text-[#1A1A1A] dark:text-gray-200 leading-relaxed">
+                      {leader.biography}
+                    </p>
+                  </div>
+                </div>
               </div>
             </Card>
           ))}
