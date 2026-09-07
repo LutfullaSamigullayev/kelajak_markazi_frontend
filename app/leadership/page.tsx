@@ -51,6 +51,9 @@ export default function LeadershipPage() {
                     <h2 className="text-xl font-extrabold text-[#3A1B78] dark:text-white">
                       {leader.name}
                     </h2>
+                    <Badge variant="purple" className="w-max mx-auto lg:mx-0 mt-1.5 text-[11px]">
+                      {leader.position}
+                    </Badge>
                   </div>
                 </div>
               </div>
