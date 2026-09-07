@@ -28,6 +28,11 @@ export default function LeadershipPage() {
             Markaz faoliyatini muvofiqlashtiruvchi, ta'lim sifatini va sohaviy yo'nalishlarni boshqaruvchi rahbarlar.
           </p>
         </div>
+
+        {/* Leadership List */}
+        <div className="flex flex-col gap-8">
+          {leadershipData.map((leader) => (
+          ))}
         </div>
       </div>
     </div>
