@@ -36,6 +36,11 @@ export default function LeadershipPage() {
               key={leader.id}
               className="border-[#E8DFED] dark:border-purple-900 shadow-xl bg-white dark:bg-[#1D0F38] overflow-hidden"
             >
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 p-6 sm:p-8">
+                {/* Left: Photo & Contact Info */}
+                <div className="lg:col-span-4 flex flex-col items-center lg:items-start text-center lg:text-left gap-4 border-b lg:border-b-0 lg:border-r border-[#E8DFED] dark:border-purple-900 pb-6 lg:pb-0 lg:pr-8">
+                </div>
+              </div>
             </Card>
           ))}
         </div>
