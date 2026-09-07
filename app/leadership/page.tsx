@@ -67,6 +67,10 @@ export default function LeadershipPage() {
                         {leader.phone}
                       </a>
                     </div>
+                    <div className="flex items-center justify-center lg:justify-start gap-2">
+                      <Mail className="w-4 h-4 text-[#5C2D91] shrink-0" />
+                      <span>{leader.email}</span>
+                    </div>
                   </div>
                 </div>
               </div>
