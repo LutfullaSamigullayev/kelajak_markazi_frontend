@@ -135,6 +135,15 @@ export default function LessonSchedulePage() {
             const dayLessons = scheduleItems.filter((item) => item.day === day.id);
 
             return (
+              <TabsContent key={day.id} value={day.id}>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {dayLessons.length > 0 ? (
+                    dayLessons.map((lesson, idx) => (
+                    ))
+                  ) : (
+                  )}
+                </div>
+              </TabsContent>
             );
           })}
         </Tabs>
