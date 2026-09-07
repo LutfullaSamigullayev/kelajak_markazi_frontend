@@ -55,6 +55,13 @@ export default function LeadershipPage() {
                       {leader.position}
                     </Badge>
                   </div>
+
+                  <div className="flex flex-col gap-2.5 text-xs text-[#666666] dark:text-purple-200 w-full pt-2">
+                    <div className="flex items-center justify-center lg:justify-start gap-2">
+                      <Clock className="w-4 h-4 text-[#5C2D91] shrink-0" />
+                      <span><b>Qabul kunlari:</b> {leader.receptionDays}</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </Card>
