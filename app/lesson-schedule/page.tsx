@@ -139,6 +139,11 @@ export default function LessonSchedulePage() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {dayLessons.length > 0 ? (
                     dayLessons.map((lesson, idx) => (
+                      <Card
+                        key={idx}
+                        className="border-[#E8DFED] dark:border-purple-900 shadow-md hover:shadow-xl hover:border-[#5C2D91] transition-all bg-white dark:bg-[#1D0F38]"
+                      >
+                      </Card>
                     ))
                   ) : (
                   )}
