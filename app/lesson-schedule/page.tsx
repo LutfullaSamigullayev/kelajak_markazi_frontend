@@ -150,6 +150,9 @@ export default function LessonSchedulePage() {
                               <Clock className="w-3.5 h-3.5" /> {lesson.time}
                             </span>
                           </div>
+                          <CardTitle className="text-xl font-extrabold text-[#3A1B78] dark:text-white mt-2">
+                            {lesson.subject}
+                          </CardTitle>
                         </CardHeader>
                       </Card>
                     ))
