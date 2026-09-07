@@ -118,6 +118,19 @@ export default function LessonSchedulePage() {
             Hafta kunlari bo'yicha to'garak dars vaqtlari, xonalar va mas'ul o'qituvchilar jadvali.
           </p>
         </div>
+
+        {/* Timetable Tabs */}
+        <Tabs defaultValue="mon" onValueChange={setSelectedDay} className="w-full">
+          <div className="flex justify-center mb-8">
+            <TabsList className="flex flex-wrap justify-center gap-2 h-auto p-2">
+              {daysOfWeek.map((day) => (
+                <TabsTrigger key={day.id} value={day.id} className="text-xs sm:text-sm font-bold">
+                  {day.name}
+                </TabsTrigger>
+              ))}
+            </TabsList>
+          </div>
+        </Tabs>
       </div>
     </div>
   );
