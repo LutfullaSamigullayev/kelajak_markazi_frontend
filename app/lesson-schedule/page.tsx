@@ -130,6 +130,13 @@ export default function LessonSchedulePage() {
               ))}
             </TabsList>
           </div>
+
+          {daysOfWeek.map((day) => {
+            const dayLessons = scheduleItems.filter((item) => item.day === day.id);
+
+            return (
+            );
+          })}
         </Tabs>
       </div>
     </div>
