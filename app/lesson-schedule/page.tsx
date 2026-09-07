@@ -154,6 +154,17 @@ export default function LessonSchedulePage() {
                             {lesson.subject}
                           </CardTitle>
                         </CardHeader>
+
+                        <CardContent className="pt-4 flex flex-col gap-3 text-xs text-[#666666] dark:text-purple-200">
+                          <div className="flex items-center gap-2">
+                            <MapPin className="w-4 h-4 text-[#5C2D91]" />
+                            <span className="font-semibold text-foreground">{lesson.room}</span>
+                          </div>
+                          <div className="flex items-center gap-2">
+                            <User className="w-4 h-4 text-[#5C2D91]" />
+                            <span>Ustoz: <b>{lesson.teacher}</b></span>
+                          </div>
+                        </CardContent>
                       </Card>
                     ))
                   ) : (
