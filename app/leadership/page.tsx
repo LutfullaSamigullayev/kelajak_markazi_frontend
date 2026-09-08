@@ -93,6 +93,13 @@ export default function LeadershipPage() {
                           <Briefcase className="w-4 h-4 text-[#5C2D91]" /> Mehnat Faoliyati va Tajribasi
                         </span>
                       </AccordionTrigger>
+                      <AccordionContent>
+                        <ul className="list-disc list-inside space-y-1.5 text-xs text-[#666666] dark:text-purple-200">
+                          {leader.experience.map((exp, idx) => (
+                            <li key={idx}>{exp}</li>
+                          ))}
+                        </ul>
+                      </AccordionContent>
                     </AccordionItem>
                   </Accordion>
                 </div>
