@@ -103,6 +103,11 @@ export default function LeadershipPage() {
                     </AccordionItem>
 
                     <AccordionItem value="resp">
+                      <AccordionTrigger className="text-sm font-extrabold text-[#3A1B78]">
+                        <span className="flex items-center gap-2">
+                          <FileText className="w-4 h-4 text-[#5C2D91]" /> Asosiy Xizmat Vazifalari
+                        </span>
+                      </AccordionTrigger>
                     </AccordionItem>
                   </Accordion>
                 </div>
