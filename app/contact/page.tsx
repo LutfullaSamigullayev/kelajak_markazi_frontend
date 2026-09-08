@@ -40,6 +40,20 @@ export default function ContactPage() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
           {/* Left: Contact Info Cards */}
           <div className="lg:col-span-5 flex flex-col gap-6">
+            <Card className="p-6 border-[#E8DFED] dark:border-purple-900 bg-white dark:bg-[#1D0F38] shadow-lg">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-xl bg-[#F0E6FA] dark:bg-[#2E0854] flex items-center justify-center text-[#5C2D91] shrink-0">
+                  <Phone className="w-6 h-6" />
+                </div>
+                <div>
+                  <h3 className="text-base font-bold text-[#3A1B78] dark:text-white">Call-Markaz / Ishonch Telefoni</h3>
+                  <a href="tel:+998712000011" className="text-lg font-black text-[#5C2D91] dark:text-[#BB94E8]">
+                    +998 (71) 200-00-11
+                  </a>
+                  <p className="text-xs text-muted-foreground mt-0.5">Dush-Shanba: 09:00 - 18:00</p>
+                </div>
+              </div>
+            </Card>
           </div>
         </div>
       </div>
