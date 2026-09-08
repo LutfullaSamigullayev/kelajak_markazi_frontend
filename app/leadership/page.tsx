@@ -108,6 +108,13 @@ export default function LeadershipPage() {
                           <FileText className="w-4 h-4 text-[#5C2D91]" /> Asosiy Xizmat Vazifalari
                         </span>
                       </AccordionTrigger>
+                      <AccordionContent>
+                        <ul className="list-disc list-inside space-y-1.5 text-xs text-[#666666] dark:text-purple-200">
+                          {leader.responsibilities.map((resp, idx) => (
+                            <li key={idx}>{resp}</li>
+                          ))}
+                        </ul>
+                      </AccordionContent>
                     </AccordionItem>
                   </Accordion>
                 </div>
