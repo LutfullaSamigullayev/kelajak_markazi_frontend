@@ -101,6 +101,9 @@ export default function LeadershipPage() {
                         </ul>
                       </AccordionContent>
                     </AccordionItem>
+
+                    <AccordionItem value="resp">
+                    </AccordionItem>
                   </Accordion>
                 </div>
               </div>
