@@ -85,6 +85,10 @@ export default function ContactPage() {
               </div>
             </Card>
           </div>
+
+          {/* Right: Feedback Form */}
+          <div className="lg:col-span-7">
+          </div>
         </div>
       </div>
     </div>
