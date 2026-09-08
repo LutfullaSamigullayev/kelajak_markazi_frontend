@@ -88,6 +88,11 @@ export default function ContactPage() {
 
           {/* Right: Feedback Form */}
           <div className="lg:col-span-7">
+            <Card className="p-8 border-[#E8DFED] dark:border-purple-900 bg-white dark:bg-[#1D0F38] shadow-xl">
+              {!submitted ? (
+              ) : (
+              )}
+            </Card>
           </div>
         </div>
       </div>
