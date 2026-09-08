@@ -94,6 +94,18 @@ export default function ContactPage() {
                   <h2 className="text-2xl font-black text-[#3A1B78] dark:text-white">
                     Murojaat Yuborish Formasi
                   </h2>
+
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div className="flex flex-col gap-1.5">
+                      <label className="text-xs font-bold text-foreground">Ism va Familiyangiz</label>
+                      <Input
+                        required
+                        placeholder="Sardor Abdullayev"
+                        value={form.name}
+                        onChange={(e) => setForm({ ...form, name: e.target.value })}
+                      />
+                    </div>
+                  </div>
                 </form>
               ) : (
               )}
