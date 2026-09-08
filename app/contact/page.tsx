@@ -54,6 +54,21 @@ export default function ContactPage() {
                 </div>
               </div>
             </Card>
+
+            <Card className="p-6 border-[#E8DFED] dark:border-purple-900 bg-white dark:bg-[#1D0F38] shadow-lg">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-xl bg-[#F0E6FA] dark:bg-[#2E0854] flex items-center justify-center text-[#5C2D91] shrink-0">
+                  <Mail className="w-6 h-6" />
+                </div>
+                <div>
+                  <h3 className="text-base font-bold text-[#3A1B78] dark:text-white">Elektron Pochta</h3>
+                  <a href="mailto:info@kelajak.uz" className="text-base font-bold text-[#5C2D91] dark:text-[#BB94E8]">
+                    info@kelajak.uz
+                  </a>
+                  <p className="text-xs text-muted-foreground mt-0.5">Murojaatlar 24 soat ichida ko'rib chiqiladi</p>
+                </div>
+              </div>
+            </Card>
           </div>
         </div>
       </div>
