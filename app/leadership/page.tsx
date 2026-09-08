@@ -87,6 +87,8 @@ export default function LeadershipPage() {
 
                   {/* Accordion Details */}
                   <Accordion type="single" defaultValue="exp" className="w-full mt-2">
+                    <AccordionItem value="exp">
+                    </AccordionItem>
                   </Accordion>
                 </div>
               </div>
