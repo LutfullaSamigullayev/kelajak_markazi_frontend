@@ -69,6 +69,21 @@ export default function ContactPage() {
                 </div>
               </div>
             </Card>
+
+            <Card className="p-6 border-[#E8DFED] dark:border-purple-900 bg-white dark:bg-[#1D0F38] shadow-lg">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-xl bg-[#F0E6FA] dark:bg-[#2E0854] flex items-center justify-center text-[#5C2D91] shrink-0">
+                  <MapPin className="w-6 h-6" />
+                </div>
+                <div>
+                  <h3 className="text-base font-bold text-[#3A1B78] dark:text-white">Bosh Bino Manzili</h3>
+                  <p className="text-sm font-semibold text-foreground mt-1">
+                    Toshkent shahar, Navoiy ko'chasi 2A-uy
+                  </p>
+                  <p className="text-xs text-muted-foreground mt-0.5">Mo'ljal: Alisher Navoiy metrosi</p>
+                </div>
+              </div>
+            </Card>
           </div>
         </div>
       </div>
