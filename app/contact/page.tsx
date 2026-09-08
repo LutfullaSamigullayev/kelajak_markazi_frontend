@@ -9,6 +9,7 @@ import { Sparkles, Phone, Mail, MapPin, Clock, Send, CheckCircle2 } from "lucide
 
 export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
+  const [form, setForm] = useState({ name: "", phone: "", subject: "", message: "" });
 
   return (
     <div className="py-16 bg-[#F9F6FC] dark:bg-[#120924] min-h-screen">
