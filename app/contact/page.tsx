@@ -90,6 +90,11 @@ export default function ContactPage() {
           <div className="lg:col-span-7">
             <Card className="p-8 border-[#E8DFED] dark:border-purple-900 bg-white dark:bg-[#1D0F38] shadow-xl">
               {!submitted ? (
+                <form onSubmit={handleSubmit} className="flex flex-col gap-5">
+                  <h2 className="text-2xl font-black text-[#3A1B78] dark:text-white">
+                    Murojaat Yuborish Formasi
+                  </h2>
+                </form>
               ) : (
               )}
             </Card>
