@@ -36,6 +36,12 @@ export default function ContactPage() {
             Savollaringiz, takliflaringiz yoki murojaatlaringiz bo'lsa shaklni to'ldiring yoki call-markazimizga qo'ng'iroq qiling.
           </p>
         </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
+          {/* Left: Contact Info Cards */}
+          <div className="lg:col-span-5 flex flex-col gap-6">
+          </div>
+        </div>
       </div>
     </div>
   );
