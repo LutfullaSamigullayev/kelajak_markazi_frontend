@@ -88,6 +88,11 @@ export default function LeadershipPage() {
                   {/* Accordion Details */}
                   <Accordion type="single" defaultValue="exp" className="w-full mt-2">
                     <AccordionItem value="exp">
+                      <AccordionTrigger className="text-sm font-extrabold text-[#3A1B78]">
+                        <span className="flex items-center gap-2">
+                          <Briefcase className="w-4 h-4 text-[#5C2D91]" /> Mehnat Faoliyati va Tajribasi
+                        </span>
+                      </AccordionTrigger>
                     </AccordionItem>
                   </Accordion>
                 </div>
