@@ -84,6 +84,10 @@ export default function LeadershipPage() {
                       {leader.biography}
                     </p>
                   </div>
+
+                  {/* Accordion Details */}
+                  <Accordion type="single" defaultValue="exp" className="w-full mt-2">
+                  </Accordion>
                 </div>
               </div>
             </Card>
