@@ -105,6 +105,15 @@ export default function ContactPage() {
                         onChange={(e) => setForm({ ...form, name: e.target.value })}
                       />
                     </div>
+                    <div className="flex flex-col gap-1.5">
+                      <label className="text-xs font-bold text-foreground">Telefon Raqamingiz</label>
+                      <Input
+                        required
+                        placeholder="+998 90 123-45-67"
+                        value={form.phone}
+                        onChange={(e) => setForm({ ...form, phone: e.target.value })}
+                      />
+                    </div>
                   </div>
                 </form>
               ) : (
