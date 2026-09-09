@@ -125,6 +125,18 @@ export default function ContactPage() {
                       onChange={(e) => setForm({ ...form, subject: e.target.value })}
                     />
                   </div>
+
+                  <div className="flex flex-col gap-1.5">
+                    <label className="text-xs font-bold text-foreground">Xabar/Murojaat Matni</label>
+                    <textarea
+                      required
+                      rows={4}
+                      className="w-full rounded-xl border border-input bg-background p-3 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5C2D91]"
+                      placeholder="Murojaatingizni batafsil yozing..."
+                      value={form.message}
+                      onChange={(e) => setForm({ ...form, message: e.target.value })}
+                    />
+                  </div>
                 </form>
               ) : (
               )}
