@@ -57,6 +57,23 @@ export default function ClubsPage() {
               onChange={(e) => setSearchQuery(e.target.value)}
             />
           </div>
+
+          {/* Category Chips */}
+          <div className="flex flex-wrap items-center gap-2 w-full md:w-auto overflow-x-auto pb-1">
+            <button
+              onClick={() => setSelectedCategory("all")}
+              className={`px-3.5 py-2 rounded-xl text-xs font-bold transition-all ${
+                selectedCategory === "all"
+                  ? "bg-[#5C2D91] text-white shadow-md shadow-purple-900/20"
+                  : "bg-[#F0E6FA] text-[#5C2D91] hover:bg-purple-200 dark:bg-[#2E0854] dark:text-[#BB94E8]"
+              }`}
+            >
+              Barchasi
+            </button>
+            {directionsData.map((dir) => (
+            ))}
+          </div>
+        </div>
         </div>
       </div>
     </div>
