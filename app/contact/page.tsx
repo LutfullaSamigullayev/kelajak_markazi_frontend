@@ -146,6 +146,13 @@ export default function ContactPage() {
                   </Button>
                 </form>
               ) : (
+                <div className="py-12 flex flex-col items-center justify-center text-center gap-3 animate-in zoom-in duration-300">
+                  <CheckCircle2 className="w-14 h-14 text-emerald-500" />
+                  <h3 className="text-2xl font-black text-[#3A1B78]">Murojaatingiz Qabul Qilindi!</h3>
+                  <p className="text-sm text-muted-foreground max-w-sm">
+                    Tez orada mas'ul xodimlarimiz ko'rib chiqib siz bilan bog'lanishadi.
+                  </p>
+                </div>
               )}
             </Card>
           </div>
