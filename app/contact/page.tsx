@@ -115,6 +115,16 @@ export default function ContactPage() {
                       />
                     </div>
                   </div>
+
+                  <div className="flex flex-col gap-1.5">
+                    <label className="text-xs font-bold text-foreground">Murojaat Mavzusi</label>
+                    <Input
+                      required
+                      placeholder="To'garakka yozilish yoki savollar bo'yicha"
+                      value={form.subject}
+                      onChange={(e) => setForm({ ...form, subject: e.target.value })}
+                    />
+                  </div>
                 </form>
               ) : (
               )}
