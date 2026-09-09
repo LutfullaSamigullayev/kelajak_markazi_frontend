@@ -110,6 +110,8 @@ export default function ClubsPage() {
                     </div>
                   </div>
 
+                  <CardHeader className="pb-2">
+                  </CardHeader>
                 </div>
 
               </Card>
