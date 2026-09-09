@@ -137,6 +137,13 @@ export default function ContactPage() {
                       onChange={(e) => setForm({ ...form, message: e.target.value })}
                     />
                   </div>
+
+                  <Button
+                    type="submit"
+                    className="w-full h-12 font-bold text-base bg-gradient-to-r from-[#5C2D91] to-[#3A1B78] hover:from-[#3A1B78] hover:to-[#2E0854] text-white rounded-xl shadow-lg"
+                  >
+                    <Send className="w-4 h-4 mr-2" /> Xabarni Yuborish
+                  </Button>
                 </form>
               ) : (
               )}
