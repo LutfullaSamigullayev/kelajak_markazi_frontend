@@ -11,6 +11,7 @@ import { Search, Filter, Star, Clock, MapPin, Users, Sparkles } from "lucide-rea
 
 export default function ClubsPage() {
   const [searchQuery, setSearchQuery] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState("all");
 
   return (
     <div className="py-16 bg-[#F9F6FC] dark:bg-[#120924] min-h-screen">
