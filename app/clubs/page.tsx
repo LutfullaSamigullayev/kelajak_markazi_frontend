@@ -96,6 +96,19 @@ export default function ClubsPage() {
               >
                 <div>
                   <div className="relative h-48 w-full overflow-hidden bg-purple-100">
+                    <img
+                      src={club.image}
+                      alt={club.name}
+                      className="w-full h-full object-cover"
+                    />
+                    <div className="absolute top-3 left-3">
+                      <Badge variant="purple">{club.category}</Badge>
+                    </div>
+                    <div className="absolute bottom-3 right-3 bg-black/70 text-white text-xs font-bold px-2.5 py-1 rounded-lg flex items-center gap-1">
+                      <Star className="w-3.5 h-3.5 text-amber-400 fill-amber-400" />
+                      <span>{club.rating}</span>
+                    </div>
+                  </div>
 
                 </div>
 
