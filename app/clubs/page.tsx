@@ -10,6 +10,7 @@ import EnrollmentModal from "@/components/EnrollmentModal";
 import { Search, Filter, Star, Clock, MapPin, Users, Sparkles } from "lucide-react";
 
 export default function ClubsPage() {
+  const [searchQuery, setSearchQuery] = useState("");
 
   return (
     <div className="py-16 bg-[#F9F6FC] dark:bg-[#120924] min-h-screen">
