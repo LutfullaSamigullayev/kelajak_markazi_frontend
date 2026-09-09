@@ -90,6 +90,16 @@ export default function ClubsPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredClubs.length > 0 ? (
             filteredClubs.map((club) => (
+              <Card
+                key={club.id}
+                className="flex flex-col justify-between overflow-hidden hover:border-[#5C2D91] hover:shadow-xl transition-all duration-300 bg-white dark:bg-[#1D0F38]"
+              >
+                <div>
+                  <div className="relative h-48 w-full overflow-hidden bg-purple-100">
+
+                </div>
+
+              </Card>
             ))
           ) : (
           )}
