@@ -45,6 +45,19 @@ export default function ClubsPage() {
             Yo'nalish, yosh toifasi hamda hudud bo'yicha saralab o'zingizga mos to'garakni tanlang.
           </p>
         </div>
+
+        {/* Filter & Search Bar */}
+        <div className="p-4 rounded-2xl bg-white dark:bg-[#1D0F38] border border-[#E8DFED] dark:border-purple-900 shadow-lg flex flex-col md:flex-row gap-4 items-center justify-between">
+          <div className="relative w-full md:w-96">
+            <Search className="w-4 h-4 absolute left-3.5 top-3.5 text-[#5C2D91]" />
+            <Input
+              placeholder="To'garak nomi yoki kalit so'z..."
+              className="pl-10 h-11"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+            />
+          </div>
+        </div>
       </div>
     </div>
   );
