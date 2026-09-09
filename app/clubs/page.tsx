@@ -71,6 +71,17 @@ export default function ClubsPage() {
               Barchasi
             </button>
             {directionsData.map((dir) => (
+              <button
+                key={dir.id}
+                onClick={() => setSelectedCategory(dir.id)}
+                className={`px-3.5 py-2 rounded-xl text-xs font-bold transition-all ${
+                  selectedCategory === dir.id
+                    ? "bg-[#5C2D91] text-white shadow-md shadow-purple-900/20"
+                    : "bg-[#F0E6FA] text-[#5C2D91] hover:bg-purple-200 dark:bg-[#2E0854] dark:text-[#BB94E8]"
+                }`}
+              >
+                {dir.title.split(" ")[0]}
+              </button>
             ))}
           </div>
         </div>
