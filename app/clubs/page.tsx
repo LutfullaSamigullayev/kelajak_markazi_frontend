@@ -149,6 +149,9 @@ export default function ClubsPage() {
               </Card>
             ))
           ) : (
+            <div className="col-span-full py-12 text-center text-muted-foreground font-bold">
+              Kechirasiz, siz qidirgan to'garak bo'yicha natijalar topilmadi.
+            </div>
           )}
         </div>
       </div>
