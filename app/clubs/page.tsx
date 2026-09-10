@@ -111,6 +111,9 @@ export default function ClubsPage() {
                   </div>
 
                   <CardHeader className="pb-2">
+                    <CardTitle className="text-lg font-black text-[#1A1A1A] dark:text-white line-clamp-1">
+                      {club.name}
+                    </CardTitle>
                   </CardHeader>
                 </div>
 
