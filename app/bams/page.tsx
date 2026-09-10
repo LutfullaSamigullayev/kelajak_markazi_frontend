@@ -24,6 +24,11 @@ export default function BamsPage() {
         {/* Regions Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {regionsData.map((reg) => (
+            <Card
+              key={reg.id}
+              className="border-[#E8DFED] dark:border-purple-900 shadow-lg hover:shadow-2xl hover:border-[#5C2D91] transition-all bg-white dark:bg-[#1D0F38]"
+            >
+            </Card>
           ))}
         </div>
       </div>
