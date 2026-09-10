@@ -155,6 +155,12 @@ export default function ClubsPage() {
           )}
         </div>
       </div>
+
+      <EnrollmentModal
+        club={selectedClub}
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+      />
     </div>
   );
 }
