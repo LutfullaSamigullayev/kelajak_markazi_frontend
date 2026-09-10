@@ -35,6 +35,9 @@ export default function BamsPage() {
                     {reg.clubsCount} ta To'garak
                   </span>
                 </div>
+                <CardTitle className="text-xl font-extrabold text-[#3A1B78] dark:text-white mt-2">
+                  {reg.centerName}
+                </CardTitle>
               </CardHeader>
             </Card>
           ))}
