@@ -28,6 +28,14 @@ export default function BamsPage() {
               key={reg.id}
               className="border-[#E8DFED] dark:border-purple-900 shadow-lg hover:shadow-2xl hover:border-[#5C2D91] transition-all bg-white dark:bg-[#1D0F38]"
             >
+              <CardHeader className="pb-3 border-b border-[#E8DFED] dark:border-purple-900">
+                <div className="flex items-center justify-between">
+                  <Badge variant="purple">{reg.name}</Badge>
+                  <span className="text-xs font-bold text-[#5C2D91] dark:text-[#BB94E8]">
+                    {reg.clubsCount} ta To'garak
+                  </span>
+                </div>
+              </CardHeader>
             </Card>
           ))}
         </div>
