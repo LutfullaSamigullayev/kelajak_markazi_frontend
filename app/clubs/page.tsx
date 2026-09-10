@@ -138,6 +138,8 @@ export default function ClubsPage() {
                   </CardContent>
                 </div>
 
+                <CardFooter className="pt-2 pb-5">
+                </CardFooter>
               </Card>
             ))
           ) : (
