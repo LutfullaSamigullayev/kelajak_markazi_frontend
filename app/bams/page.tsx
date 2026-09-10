@@ -39,6 +39,30 @@ export default function BamsPage() {
                   {reg.centerName}
                 </CardTitle>
               </CardHeader>
+
+              <CardContent className="pt-4 flex flex-col gap-3 text-xs text-[#666666] dark:text-purple-200">
+                <div className="flex items-start gap-2.5">
+                  <MapPin className="w-4 h-4 text-[#5C2D91] shrink-0 mt-0.5" />
+                  <span className="font-semibold text-foreground">{reg.address}</span>
+                </div>
+                <div className="flex items-center gap-2.5">
+                  <Phone className="w-4 h-4 text-[#5C2D91] shrink-0" />
+                  <a href={`tel:${reg.phone}`} className="font-bold text-[#5C2D91] dark:text-[#BB94E8]">
+                    {reg.phone}
+                  </a>
+                </div>
+                <div className="flex items-center gap-2.5">
+                  <Mail className="w-4 h-4 text-[#5C2D91] shrink-0" />
+                  <span>{reg.email}</span>
+                </div>
+                <div className="flex items-center justify-between pt-3 border-t border-[#E8DFED] dark:border-purple-900 mt-1">
+                  <span className="flex items-center gap-1 font-bold text-[#1A1A1A] dark:text-gray-200">
+                    <Users className="w-3.5 h-3.5 text-[#5C2D91]" />
+                    {reg.studentsCount} o'quvchilar
+                  </span>
+                  <Badge variant="outline">Rahbar: {reg.director}</Badge>
+                </div>
+              </CardContent>
             </Card>
           ))}
         </div>
