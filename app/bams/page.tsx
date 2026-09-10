@@ -20,6 +20,12 @@ export default function BamsPage() {
             O'zbekiston Respublikasi bo'ylab 14 ta hududdagi Kelajak Markazi filiallari ro'yxati va bog'lanish ma'lumotlari.
           </p>
         </div>
+
+        {/* Regions Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {regionsData.map((reg) => (
+          ))}
+        </div>
       </div>
     </div>
   );
