@@ -46,6 +46,41 @@ export default function AboutUsPage() {
             </p>
           </Card>
         </div>
+
+        {/* Core Principles */}
+        <div className="flex flex-col gap-8">
+          <div className="text-center">
+            <h2 className="text-3xl font-extrabold text-[#3A1B78] dark:text-[#BB94E8]">
+              Bizning Asosiy Tamoyillarimiz
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            <div className="p-6 rounded-2xl bg-white dark:bg-[#1D0F38] border border-[#E8DFED] dark:border-purple-900 shadow-md flex flex-col gap-3">
+              <CheckCircle2 className="w-8 h-8 text-[#5C2D91] dark:text-[#BB94E8]" />
+              <h3 className="text-lg font-bold text-[#1A1A1A] dark:text-white">To'liq Bepul Ta'lim</h3>
+              <p className="text-xs text-[#666666] dark:text-purple-200">
+                Barcha to'garaklar va mashg'ulotlar davlat tomonidan moliyalashtiriladi va bepul.
+              </p>
+            </div>
+
+            <div className="p-6 rounded-2xl bg-white dark:bg-[#1D0F38] border border-[#E8DFED] dark:border-purple-900 shadow-md flex flex-col gap-3">
+              <Award className="w-8 h-8 text-[#5C2D91] dark:text-[#BB94E8]" />
+              <h3 className="text-lg font-bold text-[#1A1A1A] dark:text-white">Xalqaro Sertifikatlashtirish</h3>
+              <p className="text-xs text-[#666666] dark:text-purple-200">
+                Kurslarni muvaffaqiyatli tamomlagan o'quvchilarga davlat namunasidagi sertifikat beriladi.
+              </p>
+            </div>
+
+            <div className="p-6 rounded-2xl bg-white dark:bg-[#1D0F38] border border-[#E8DFED] dark:border-purple-900 shadow-md flex flex-col gap-3">
+              <Users className="w-8 h-8 text-[#5C2D91] dark:text-[#BB94E8]" />
+              <h3 className="text-lg font-bold text-[#1A1A1A] dark:text-white">Inklyuzivlik va Qo'llab-quvvatlash</h3>
+              <p className="text-xs text-[#666666] dark:text-purple-200">
+                Imkoniyati cheklangan hamda ijtimoiy himoyaga muhtoj yoshlar uchun maxsus sharoitlar.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
